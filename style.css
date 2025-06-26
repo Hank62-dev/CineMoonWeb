@@ -89,6 +89,7 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(47, 147, 47) 50%, rg
     overflow: hidden;
     z-index: 1;
     transition: color 0.2 ease;
+    
 }
 .intro .btnPopcorn::before{
     content: '';
