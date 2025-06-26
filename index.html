@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>  CineStar-Hệ thống rạp chiếu phim hiện đại, giá rẻ bậc nhất</title>
+    <title>  Bamboo - Hệ thống rạp chiếu phim hiện đại, giá rẻ bậc nhất toàn cầu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div id="boxToolBar">
@@ -12,7 +14,7 @@
             <button class="btnBooking">ĐẶT VÉ NGAY</button>
             <button class="btnPopcorn">ĐẶT BẮP NƯỚC</button>
             <input type="search" placeholder="Tìm phim, rạp..." id="search">
-            <a href="/index.html"><img src="header-logo.png" width="200px" alt="logoCineStar" class="logoCineStar"></a>
+            <a href="/index.html"><img src="header-logo.png" width="200px" alt="logoBamboo" class="logoBamboo"></a>
             <p>VÕ GIA HUY</p>   
             <img src="flagVietnam.png" width="40px" alt="flagVietNam" class="flagVietNam">
             <img src="flagamerica.png" width="30px" alt="flagAmerica" class="flagAmerica">
@@ -31,38 +33,57 @@
     </div>
 
     <div class="newsHot">
-    <p>⟨</p>
+    <p id="prevBtn">⟨</p>
+        <div class="sliderWrapper" id="sliderWrapper">
+            <div class="movieItem">
+                <img src="muonruoudaykeo.png" alt="muonruoudaykeo">
+                <button class="btnBooking">ĐẶT VÉ NGAY</button>
+            </div>
 
-    <div class="movieItem">
-        <img src="chaching.png" alt="Chaching">
-        <button class="btnBooking">ĐẶT VÉ NGAY</button>
-    </div>
+            <div class="movieItem">
+                <img src="nhiemvubatkhathi.png" alt="Nhiệm vụ bất khả thi">
+                <button class="btnBooking">ĐẶT VÉ NGAY</button>
+            </div>
 
-    <div class="movieItem">
-        <img src="nhiemvubatkhathi.png" alt="Nhiệm vụ bất khả thi">
-        <button class="btnBooking">ĐẶT VÉ NGAY</button>
-    </div>
-
-    <div class="movieItem">
-        <img src="bikipluyenrong.png" alt="Bí kíp luyện rồng">
-        <button class="btnBooking">ĐẶT VÉ NGAY</button>
-    </div>
-
-    <p>⟩</p>
+            <div class="movieItem">
+                <img src="bikipluyenrong.png" alt="Bí kíp luyện rồng">
+                <button class="btnBooking">ĐẶT VÉ NGAY</button>
+            </div>
+        </div>
+    <p id="nextBtn">⟩</p>
 </div>
 
 
     <div class="toolbarBooking">
-        <p>ĐẶT VÉ NHANH</p>
-        <p>1.Chọn Rạp</p>
-        <p>2.Chọn Phim</p>
-        <p>3.Chọn Ngày</p>
-        <p>4.Chọn Suất</p>
-        <p>ĐẶT NGAY</p>
+        <p class="booking">ĐẶT VÉ NHANH</p>
+
+            <div class="choice">
+                <p>1.Chọn Rạp</p>
+                <span>^</span>
+            </div>
+
+            <div class="choice">
+                <p>2.Chọn Phim</p>
+                <span>^</span>
+            </div>
+
+            <div class="choice">
+                <p>3.Chọn Ngày</p>
+                <span>^</span>
+            </div>
+
+            <div class="choice">
+                <p>4.Chọn Suất</p>
+                <span>^</span>
+            </div>
+        <p class="book">ĐẶT NGAY</p>
     </div>
 
     <div class="nowShowing">
-
+        <h2>PHIM ĐANG CHIẾU</h2>
+        <p>waiting...</p>
     </div>
+    <!--Liên kết với script-->
+    <script src="script.js"></script>
 </body>
 </html>
