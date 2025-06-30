@@ -10,8 +10,10 @@
 <body>
     <div id="boxToolBar">
         <div class="intro">
-            <button class="btnBooking"><i class="fa-solid fa-ticket"></i>🎟️ĐẶT VÉ NGAY</button>
-            <button class="btnPopcorn"><i class="fa-solid fa-mug-soda"></i>🍿ĐẶT BẮP NƯỚC</button>
+            <img src="../assets/ticket.png" width="25px;" style=" z-index: 10;position: absolute; right: -435px; bottom: -50px;">
+            <button class="btnBooking"> ĐẶT VÉ NGAY</button>
+            <img src="../assets/popcorn.png" width="35px;" style=" z-index: 10;position: absolute; right: -575px; bottom: -55px;">
+            <button class="btnPopcorn">ĐẶT BẮP NƯỚC</button>
             <div class="search-container">
                 <input type="search" placeholder="Tìm phim, rạp..." id="search">
                 <i class="fa-solid fa-magnifying-glass" ></i>
@@ -249,9 +251,209 @@
 
 
     
-    <div class="futureShow">
-        <h2>PHIM SẮP CHIẾU</h2>
+    <!--Phim sắp chiếu-->
+    <h2 class="titleFutureshow">PHIM SẮP CHIẾU</h2>
+    <p id="prevBtn2">⟨</p>
+    <div class="futureShow" id="futureWrapper">
+        <div class="movieCard">
+            <img src="../assets/quan-tai-vo-quy.png" width="270px;" style="border-radius: 3px;" alt="">
+            <h6 class="predictShow">Khởi chiếu: 04/07/2025 </h6>
+            <h5 class="titleMovie">QUAN TÀI VỢ QUỶ (T18)</h5>
+            <div class="reviewBox">
+                <h3>QUAN TÀI VỢ QUỶ (T18)</h3>
+                <p><i class="fa-solid fa-tag"></i>Kinh dị</p>
+                <p><i class="fa-solid fa-clock"></i>92'</p>
+                <p><i class="fa-solid fa-globe"></i>Khác</p>
+                <p><i class="fa-solid fa-comment-dots"></i>Phụ Đề</p>
+            </div>
+            <div class="toolbarReview">
+                <i class="fa-solid fa-play" style="color: red; position: relative; left:-47px;"></i>
+                <a href="" class="trailer">Xem Trailer</a>
+                <p class="btnBook">TÌM HIỂU THÊM</p>
+            </div>
+        </div>
+
+        <div class="movieCard">
+            <img src="../assets/TG-khung-long.png" width="270px;" style="border-radius: 3px;" alt="">
+            <h6 class="predictShow">Khởi chiếu: 04/07/2025 </h6>
+            <h5 class="titleMovie">THẾ GIỚI KHỦNG LONG: TÁI SINH</h5>
+            <div class="reviewBox">
+                <h3>THẾ GIỚI KHỦNG LONG: TÁI SINH</h3>
+                <p><i class="fa-solid fa-tag"></i>Hành động, Phiêu lưu, Hành động</p>
+                <p><i class="fa-solid fa-clock"></i>99'</p>
+                <p><i class="fa-solid fa-globe"></i>Khác</p>
+                <p><i class="fa-solid fa-comment-dots"></i>Phụ Đề</p>
+            </div>
+            <div class="toolbarReview">
+                <i class="fa-solid fa-play" style="color: red;position: relative; left:-47px;"></i>
+                <a href="" class="trailer">Xem Trailer</a>
+                <p class="btnBook">TÌM HIỂU THÊM</p>
+            </div>
+        </div>
+
+        <div class="movieCard">
+            <img src="../assets/to-doi-gau-nhi-poster.png" width="270px;" style="border-radius: 3px;" alt="">
+            <h6 class="predictShow">Khởi chiếu: 04/07/2025 </h6>
+            <h5 class="titleMovie">TỔ ĐỘI GẤU NHÍ: DU HÍ 4 PHƯƠNG</h5>
+            <div class="reviewBox">
+                <h3>TỔ ĐỘI GẤU NHÍ: DU HÍ 4 PHƯƠNG</h3>
+                <p><i class="fa-solid fa-tag"></i>Hoạt hình</p>
+                <p><i class="fa-solid fa-clock"></i>87'</p>
+                <p><i class="fa-solid fa-globe"></i>Hàn Quốc</p>
+                <p><i class="fa-solid fa-comment-dots"></i>Phụ Đề</p>
+            </div>
+            <div class="toolbarReview">
+                <i class="fa-solid fa-play" style="color: red;position: relative; left:-47px;"></i>
+                <a href="" class="trailer">Xem Trailer</a>
+                <p class="btnBook">TÌM HIỂU THÊM</p>
+            </div>
+        </div>
+
+        <div class="movieCard">
+            <img src="../assets/superman-poster.png" width="270px;" height="403px;" style="border-radius: 3px;" alt="">
+            <h6 class="predictShow">Khởi chiếu: 04/07/2025 </h6>
+            <h5 class="titleMovie">SUPERMAN</h5>
+            <div class="reviewBox">
+                <h3>SUPERMAN</h3>
+                <p><i class="fa-solid fa-tag"></i>Siêu anh hùng, Hành động</p>
+                <p><i class="fa-solid fa-clock"></i>99'</p>
+                <p><i class="fa-solid fa-globe"></i>Hàn Quốc</p>
+                <p><i class="fa-solid fa-comment-dots"></i>Phụ Đề</p>
+            </div>
+            <div class="toolbarReview">
+                <i class="fa-solid fa-play" style="color: red;position: relative; left:-47px;"></i>
+                <a href="" class="trailer">Xem Trailer</a>
+                <p class="btnBook">TÌM HIỂU THÊM</p>
+            </div>
+        </div>
+
+        <div class="movieCard">
+            <img src="../assets/dan-ca-go.png" width="270px;" style="border-radius: 3px;" alt="">
+            <h6 class="predictShow">Khởi chiếu: 04/07/2025 </h6>
+            <h5 class="titleMovie">ĐÀN CÁ GỖ</h5>
+            <div class="reviewBox">
+                <h3>ĐÀN CÁ GỖ</h3>
+                <p><i class="fa-solid fa-tag"></i>Tình cảm, Lãng mạn</p>
+                <p><i class="fa-solid fa-clock"></i>30'</p>
+                <p><i class="fa-solid fa-globe"></i>Việt Nam</p>
+                <p><i class="fa-solid fa-comment-dots"></i>VN</p>
+            </div>
+            <div class="toolbarReview">
+                <i class="fa-solid fa-play" style="color: red;position: relative; left:-47px;"></i>
+                <a href="" class="trailer">Xem Trailer</a>
+                <p class="btnBook">TÌM HIỂU THÊM</p>
+            </div>
+        </div>
+
+        <div class="movieCard">
+            <img src="../assets/xi-trum-poster.png" width="270px;" height="405px;" style="border-radius: 3px;" alt="">
+            <h6 class="predictShow">Khởi chiếu: 04/07/2025 </h6>
+            <h5 class="titleMovie">PHIM XÌ TRUM</h5>
+            <div class="reviewBox">
+                <h3>PHIM XÌ TRUM</h3>
+                <p><i class="fa-solid fa-tag"></i>Hoạt hình</p>
+                <p><i class="fa-solid fa-clock"></i>99'</p>
+                <p><i class="fa-solid fa-globe"></i>Hàn Quốc</p>
+                <p><i class="fa-solid fa-comment-dots"></i>Phụ Đề</p>
+            </div>
+            <div class="toolbarReview">
+                <i class="fa-solid fa-play" style="color: red;position: relative; left:-47px;"></i>
+                <a href="" class="trailer">Xem Trailer</a>
+                <p class="btnBook">TÌM HIỂU THÊM</p>
+            </div>
+        </div>
+
+        <div class="movieCard">
+            <img src="../assets/mang-me-di-bo-poster.png" width="270px;" height="405px;" style="border-radius: 3px;" alt="">
+            <h6 class="predictShow">Khởi chiếu: 04/07/2025 </h6>
+            <h5 class="titleMovie">MANG MẸ BỎ ĐI</h5>
+            <div class="reviewBox">
+                <h3>MANG MẸ BỎ ĐI</h3>
+                <p><i class="fa-solid fa-tag"></i>Gia đình, Tâm lý</p>
+                <p><i class="fa-solid fa-clock"></i>99'</p>
+                <p><i class="fa-solid fa-globe"></i>Việt Nam</p>
+                <p><i class="fa-solid fa-comment-dots"></i>Phụ Đề</p>
+            </div>
+            <div class="toolbarReview">
+                <i class="fa-solid fa-play" style="color: red;position: relative; left:-47px;"></i>
+                <a href="" class="trailer">Xem Trailer</a>
+                <p class="btnBook">TÌM HIỂU THÊM</p>
+            </div>
+        </div>
+
+        <div class="movieCard">
+            <img src="../assets/bang-dan-quai-kiet-2.png" width="270px;" style="border-radius: 3px;" alt="">
+            <h6 class="predictShow">Khởi chiếu: 04/07/2025 </h6>
+            <h5 class="titleMovie">BĂNG ĐẢN QUÁI KIỆT 2</h5>
+            <div class="reviewBox">
+                <h3>BĂNG ĐẢNG QUÁI KIỆT 2</h3>
+                <p><i class="fa-solid fa-tag"></i>Hoạt hình</p>
+                <p><i class="fa-solid fa-clock"></i>99'</p>
+                <p><i class="fa-solid fa-globe"></i>Khác</p>
+                <p><i class="fa-solid fa-comment-dots"></i>Phụ Đề</p>
+            </div>
+            <div class="toolbarReview">
+                <i class="fa-solid fa-play" style="color: red;position: relative; left:-47px;"></i>
+                <a href="" class="trailer">Xem Trailer</a>
+                <p class="btnBook">TÌM HIỂU THÊM</p>
+            </div>
+        </div>
+
+        <div class="movieCard">
+            <img src="../assets/muonhondoatxac.png" width="270px;" style="border-radius: 3px;" alt="">
+            <h6 class="predictShow">Khởi chiếu: 04/07/2025 </h6>
+            <h5 class="titleMovie">MƯỢN HỒN ĐOẠT XÁC (T18)</h5>
+            <div class="reviewBox">
+                <h3>MƯỢN HỒN ĐOẠT XÁC</h3>
+                <p><i class="fa-solid fa-tag"></i>Hành động, hài hước, kịch tính</p>
+                <p><i class="fa-solid fa-clock"></i>158'</p>
+                <p><i class="fa-solid fa-globe"></i>Hàn Quốc</p>
+                <p><i class="fa-solid fa-comment-dots"></i>Phụ Đề</p>
+            </div>
+            <div class="toolbarReview">
+                <i class="fa-solid fa-play" style="color: red;position: relative; left:-47px;"></i>
+                <a href="" class="trailer">Xem Trailer</a>
+                <p class="btnBook">TÌM HIỂU THÊM</p>
+            </div>
+        </div>
+
+        <div class="movieCard">
+            <img src="../assets/muonhondoatxac.png" width="270px;" style="border-radius: 3px;" alt="">
+            <h6 class="predictShow">Khởi chiếu: 04/07/2025 </h6>
+            <h5 class="titleMovie">MƯỢN HỒN ĐOẠT XÁC (T18)</h5>
+            <div class="reviewBox">
+                <h3>MƯỢN HỒN ĐOẠT XÁC</h3>
+                <p><i class="fa-solid fa-tag"></i>Hành động, hài hước, kịch tính</p>
+                <p><i class="fa-solid fa-clock"></i>158'</p>
+                <p><i class="fa-solid fa-globe"></i>Hàn Quốc</p>
+                <p><i class="fa-solid fa-comment-dots"></i>Phụ Đề</p>
+            </div>
+            <div class="toolbarReview">
+                <i class="fa-solid fa-play" style="color: red;position: relative; left:-47px;"></i>
+                <a href="" class="trailer">Xem Trailer</a>
+                <p class="btnBook">TÌM HIỂU THÊM</p>
+            </div>
+        </div>
     </div>
+    <p id="nextBtn2">⟩</p>
+    
+<!--Khuyến mãi-->
+    <h2 class="titleDiscounts">KHUYẾN MÃI</h2>
+    <p id="prevDiscountsBtn">⟨</p>
+    <div class="discounts" id="discountsWrapper">
+        <a href=""><img src="../assets/c_student.png" alt="discount-student"></a>
+        <a href=""><img src="../assets/C_TEN.png" alt="discount-student"></a>
+        <a href=""><img src="../assets/C_MEMBER.png" alt="discount-member"></a>
+        <a href=""><img src="../assets/monday_1_.png" alt="discount-date"></a>
+        
+    </div>
+    <p id="nextDiscountsBtn">⟩</p>
+
+
+
+
+
+
     <!--Liên kết với script-->
     <script src="script.js"></script>
 </body>
