@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>  Bamboo - Hệ thống rạp chiếu phim hiện đại, giá rẻ bậc nhất toàn cầu</title>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-
+    <title>  CineStars - Hệ thống rạp chiếu phim hiện đại, giá rẻ bậc nhất toàn cầu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <div id="boxToolBar">
         <div class="intro">
-            <button class="btnBooking">ĐẶT VÉ NGAY</button>
-            <button class="btnPopcorn">ĐẶT BẮP NƯỚC</button>
-            <input type="search" placeholder="Tìm phim, rạp..." id="search">
-            <a href="/index.html"><img src="header-logo.png" width="200px" alt="logoBamboo" class="logoBamboo"></a>
+            <button class="btnBooking"><i class="fa-solid fa-ticket"></i>🎟️ĐẶT VÉ NGAY</button>
+            <button class="btnPopcorn"><i class="fa-solid fa-mug-soda"></i>🍿ĐẶT BẮP NƯỚC</button>
+            <div class="search-container">
+                <input type="search" placeholder="Tìm phim, rạp..." id="search">
+                <i class="fa-solid fa-magnifying-glass" ></i>
+            </div>
+            <a href="../src/index.html"><img src="../assets/header-logo.png" width="200px" alt="logoCineStar" class="logoCineStar"></a>
             <p>VÕ GIA HUY</p>   
-            <img src="flagVietnam.png" width="40px" alt="flagVietNam" class="flagVietNam">
-            <img src="flagamerica.png" width="30px" alt="flagAmerica" class="flagAmerica">
+            <img src="../assets/flagVietnam.png" width="40px" alt="flagVietNam" class="flagVietNam">
+            <img src="../assets/flagamerica.png" width="30px" alt="flagAmerica" class="flagAmerica">
         </div>
         
         <hr class="lineToolbar">
@@ -35,17 +37,17 @@
     <p id="prevBtn">⟨</p>
         <div class="sliderWrapper" id="sliderWrapper">
             <div class="movieItem">
-                <img src="muonruoudaykeo.png" alt="muonruoudaykeo">
+                <img src="../assets/muonruoudaykeo.png" alt="muonruoudaykeo">
                 <button class="btnBooking">ĐẶT VÉ NGAY</button>
             </div>
 
             <div class="movieItem">
-                <img src="nhiemvubatkhathi.png" alt="Nhiệm vụ bất khả thi">
+                <img src="../assets/nhiemvubatkhathi.png" alt="Nhiệm vụ bất khả thi">
                 <button class="btnBooking">ĐẶT VÉ NGAY</button>
             </div>
 
             <div class="movieItem">
-                <img src="bikipluyenrong.png" alt="Bí kíp luyện rồng">
+                <img src="../assets/bikipluyenrong.png" alt="Bí kíp luyện rồng">
                 <button class="btnBooking">ĐẶT VÉ NGAY</button>
             </div>
         </div>
@@ -57,8 +59,8 @@
         <p class="booking">ĐẶT VÉ NHANH</p>
 
             <div class="choice">
-                <p>1.Chọn Rạp</p>
-                <span>^</span>
+                    <p>1.Chọn Rạp</p>
+                    <span>^</span>
             </div>
 
             <div class="choice">
@@ -75,12 +77,180 @@
                 <p>4.Chọn Suất</p>
                 <span>^</span>
             </div>
+                
         <p class="book">ĐẶT NGAY</p>
     </div>
 
-    <div class="nowShowing">
-        <h2>PHIM ĐANG CHIẾU</h2>
-        <p>waiting...</p>
+    <h2>PHIM ĐANG CHIẾU</h2>
+    <div id="prevButn">⟨</div>
+    <div class="nowShowing" id="Wrapper">
+        <div class="movieItem">
+            <div class="movieBox">
+                <img src="../assets/buon-than-ban-thanh.png" width="270px;" alt="buon-than-ban-thanh" class="imageMovie">
+                <h5 class="title">BUÔN THẦN BÁN THÁNH (T16)</h5>
+                <div class="review">
+                    <h3> BUÔN THẦN BÁN THÁNH (T16)</h3>
+                    <p><i class="fa-solid fa-tag"></i>Hành động, hài hước, kịch tính</p>
+                    <p><i class="fa-solid fa-clock"></i>158'</p>
+                    <p><i class="fa-solid fa-globe"></i>Hàn Quốc</p>
+                    <p><i class="fa-solid fa-comment-dots"></i>Phụ Đề</p>
+                </div>
+            </div>
+            
+            <div class="toolReview">
+                <i class="fa-solid fa-play" style="color: red;"></i>
+                <a href="https://youtu.be/miUjcCPpVGo" class="trailer">Xem Trailer</a>
+                <p class="btnBook">ĐẶT VÉ</p>
+            </div>
+        </div>
+
+        <div class="movieItem">
+            <div class="movieBox">
+                <img src="../assets/muonhondoatxac.png" width="270px;" alt="muon-hon-doat-xac" class="imageMovie">
+                <h5 class="title">MƯỢN HỒN ĐOẠT XÁC (T18)</h5>
+                <div class="review">
+                    <h3>MƯỢN HỒN ĐOẠT XÁC (T18)</h3>
+                    <p><i class="fa-solid fa-tag"></i>Hấp dẫn, kinh dị, kịch tính</p>
+                    <p><i class="fa-solid fa-clock"></i>148'</p>
+                    <p><i class="fa-solid fa-globe"></i>Hoa Kỳ</p>
+                    <p><i class="fa-solid fa-comment-dots"></i>Phụ Đề</p>  
+                </div>
+            </div>
+            
+            <div class="toolReview">
+                <i class="fa-solid fa-play" style="color: red;" ></i>
+                <a href="https://youtu.be/M0Lyg6CQcDs" class="trailer">Xem Trailer</a>
+                <p class="btnBook">ĐẶT VÉ</p>
+            </div>
+        </div>
+
+        <div class="movieItem">
+            <div class="movieBox">
+                <img src="../assets/nhvubatkhathi.png" width="270px;" alt="nhiem-vu-bat-kha-thi" class="imageMovie"> 
+                <h5 class="title">NHIỆM VỤ: BẤT KHẢ THI - NGHIỆP BÁO CUỐI CÙNG (T16)</h5>
+                <div class="review">
+                    <h3>NHIỆM VỤ: BẤT KHẢ THI - NGHIỆP BÁO CUỐI CÙNG (T16)</h3>
+                    <p><i class="fa-solid fa-tag"></i>Hồi hộp, phiêu lưu, hành động</p>
+                    <p><i class="fa-solid fa-clock"></i> 169'</p>
+                    <p><i class="fa-solid fa-globe"></i>  Hoa Kỳ</p>
+                    <p><i class="fa-solid fa-comment-dots"></i>Phụ Đề</p>
+                </div>
+            </div>
+            
+            <div class="toolReview">
+                <i class="fa-solid fa-play" style="color: red;"></i>
+                <a href="https://youtu.be/Q_lLOjR3N3w" class="trailer">Xem Trailer</a>
+                <p class="btnBook">ĐẶT VÉ</p>
+            </div>
+        </div>
+
+        <div class="movieItem">
+            <div class="movieBox">
+                <img src="../assets/nammuoi.png" width="270px;" alt="nam-muoi" class="imageMovie">
+                <h5 class="title">NĂM MƯỜI (T18)</h5>
+                <div class="review">
+                    <h3>NĂM MƯỜI (T18)</h3>
+                    <p><i class="fa-solid fa-tag"></i>         Hồi hộp,kinh dị</p>
+                    <p><i class="fa-solid fa-clock"></i>       169'</p>
+                    <p><i class="fa-solid fa-globe"></i>       Việt Nam</p>
+                    <p><i class="fa-solid fa-comment-dots"></i>Phụ Đề</p>
+                    <p></p>
+                </div>
+            </div>
+            
+            <div class="toolReview">
+                <i class="fa-solid fa-play" style="color: red;"></i>
+                <a href="https://youtu.be/c8k3yGvslEI" class="trailer">Xem Trailer</a>
+                <p class="btnBook">ĐẶT VÉ</p>
+            </div>
+        </div>
+
+        <div class="movieItem">
+            <div class="movieBox">
+                <img src="../assets/buon-than-ban-thanh.png" width="270px;" alt="buon-than-ban-thanh" class="imageMovie">
+                <h5 class="title">BUÔN THẦN BÁN THÁNH (T16)</h5>
+                <div class="review">
+                    <h3>BUÔN THẦN BÁN THÁNH (T16)</h3>
+                    <p><i class="fa-solid fa-tag"></i>Hành động, hài hước, kịch tính</p>
+                    <p><i class="fa-solid fa-clock"></i>158'</p>
+                    <p><i class="fa-solid fa-globe"></i>Hàn Quốc</p>
+                    <p><i class="fa-solid fa-comment-dots"></i>Phụ Đề</p>
+                </div>
+            </div>
+            
+            <div class="toolReview">
+                <i class="fa-solid fa-play" style="color: red;"></i>
+                <a href="https://youtu.be/miUjcCPpVGo" class="trailer">Xem Trailer</a>
+                <p class="btnBook">ĐẶT VÉ</p>
+            </div>
+        </div>
+
+        <div class="movieItem">
+            <div class="movieBox">
+                <img src="../assets/buon-than-ban-thanh.png" width="270px;" alt="buon-than-ban-thanh" class="imageMovie">
+                <h5 class="title">BUÔN THẦN BÁN THÁNH (T16)</h5>
+                <div class="review">
+                    <h3>BUÔN THẦN BÁN THÁNH (T16)</h3>
+                    <p><i class="fa-solid fa-tag"></i>Hành động, hài hước, kịch tính</p>
+                    <p><i class="fa-solid fa-clock"></i>158'</p>
+                    <p><i class="fa-solid fa-globe"></i>Hàn Quốc</p>
+                    <p><i class="fa-solid fa-comment-dots"></i>Phụ Đề</p>
+                </div>
+            </div>
+            
+            <div class="toolReview">
+                <i class="fa-solid fa-play" style="color: red;"></i>
+                <a href="https://youtu.be/miUjcCPpVGo" class="trailer">Xem Trailer</a>
+                <p class="btnBook">ĐẶT VÉ</p>
+            </div>
+        </div>
+
+        <div class="movieItem">
+            <div class="movieBox">
+                <img src="../assets/buon-than-ban-thanh.png" width="270px;" alt="buon-than-ban-thanh" class="imageMovie">
+                <h5 class="title">BUÔN THẦN BÁN THÁNH (T16)</h5>
+                <div class="review">
+                    <h3>BUÔN THẦN BÁN THÁNH (T16)</h3>
+                    <p><i class="fa-solid fa-tag"></i>Hành động, hài hước, kịch tính</p>
+                    <p><i class="fa-solid fa-clock"></i>158'</p>
+                    <p><i class="fa-solid fa-globe"></i>Hàn Quốc</p>
+                    <p><i class="fa-solid fa-comment-dots"></i>Phụ Đề</p>
+                </div>
+            </div>
+            
+            <div class="toolReview">
+                <i class="fa-solid fa-play" style="color: red;"></i>
+                <a href="" class="trailer">Xem Trailer</a>
+                <p class="btnBook">ĐẶT VÉ</p>
+            </div>
+        </div>
+
+        <div class="movieItem">
+            <div class="movieBox">
+                <img src="../assets/buon-than-ban-thanh.png" width="270px;" alt="buon-than-ban-thanh" class="imageMovie">
+                <h5 class="title">BUÔN THẦN BÁN THÁNH (T16)</h5>
+                <div class="review">
+                    <h3>BUÔN THẦN BÁN THÁNH (T16)</h3>
+                    <p><i class="fa-solid fa-tag"></i>Hành động, hài hước, kịch tính</p>
+                    <p><i class="fa-solid fa-clock"></i>158'</p>
+                    <p><i class="fa-solid fa-globe"></i>Hàn Quốc</p>
+                    <p><i class="fa-solid fa-comment-dots"></i>Phụ Đề</p>
+                </div>
+            </div>
+            
+            <div class="toolReview">
+                <i class="fa-solid fa-play" style="color: red;"></i>
+                <a href="" class="trailer">Xem Trailer</a>
+                <p class="btnBook">ĐẶT VÉ</p>
+            </div>
+        </div>
+    </div>
+    <p id="nextButn">⟩</p>
+
+
+    
+    <div class="futureShow">
+        <h2>PHIM SẮP CHIẾU</h2>
     </div>
     <!--Liên kết với script-->
     <script src="script.js"></script>

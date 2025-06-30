@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="movie-card">
+  <img src="../assets/buon-than-ban-thanh.png" alt="Poster Phim">
+  <div class="overlay">
+    <div class="text">
+      <h3><i class="fa-solid fa-mug-soda"></i>CUỘN BĂNG QUỶ ÁM</h3>
+      <p>Kinh dị - Khởi chiếu: 13.06.2025</p>
+    </div>
+  </div>
+</div>
+
+<style>
+.movie-card {
+  position: relative;
+  width: 270px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Box overlay mờ mờ */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  display: flex;
+  align-items: flex-end; /* text nằm dưới */
+  padding: 20px;
+}
+
+.text {
+  color: white;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Khi hover: hiện overlay + trượt text lên */
+.movie-card:hover .overlay {
+  opacity: 1;
+}
+
+.movie-card:hover .text {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+</style>
+</body>
+</html>
