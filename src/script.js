@@ -35,7 +35,7 @@ const wrapper = document.getElementById('futureWrapper');
     const prevBtn2 = document.getElementById('prevBtn2');
     const nextBtn2 = document.getElementById('nextBtn2');
 
-    const scrollAmount2 = 360;
+    const scrollAmount2 = 1360;
 
     prevBtn2.addEventListener('click', () => {
         wrapper.scrollBy({ left: -scrollAmount2, behavior: 'smooth' });
@@ -49,7 +49,7 @@ const discountWrapper = document.getElementById('discountsWrapper');
     const prevDiscountBtn = document.getElementById('prevDiscountsBtn');
     const nextDiscountBtn = document.getElementById('nextDiscountsBtn');
 
-    const discountScrollAmount = 1360;
+    const discountScrollAmount = 440;
     prevDiscountBtn.addEventListener('click', () => {
         discountWrapper.scrollBy({ left: -discountScrollAmount, behavior: 'smooth' });
     });
