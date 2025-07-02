@@ -3,7 +3,7 @@ body{
     background: radial-gradient(circle, rgb(124, 92, 175) 0%, rgb(1, 15, 36)70%);
     overflow-y: auto;
     overflow-x: hidden;
-
+    cursor: url('../assets/mouse-pointer.png'), auto !important;
 }
 a{
     text-decoration: none;
@@ -54,7 +54,7 @@ a{
     overflow: hidden;
     transition: color 0.2s ease;
     z-index: 1;
-    cursor: pointer;
+    cursor: url('../assets/mouse-pointer.png'), auto;
 
 }
 .intro .btnBooking::before{
@@ -95,7 +95,7 @@ a{
     overflow: hidden;
     z-index: 1;
     transition: color 0.2 ease;
-    cursor: pointer;  
+    cursor: url('../assets/mouse-pointer.png'), auto; 
 }
 .intro .btnPopcorn::before{
     content: '';
@@ -138,7 +138,7 @@ input[type="search"]::-webkit-search-cancel-button {
     top: 30px;
     color: gray;
     font-size: 15px;
-    cursor: pointer;
+    cursor: url('../assets/mouse-pointer.png'), auto;
 }
 
 .intro .logoCineStar{
@@ -207,6 +207,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .toolBar h3{
     margin: 3px 20px ;
+    cursor: url('../assets/mouse-pointer.png'), auto;
 }
 .toolLeft{
     position: relative;
@@ -262,7 +263,7 @@ input[type="search"]::-webkit-search-cancel-button {
     font-size: 3rem;
     background: none;
     border: none;
-    cursor: pointer;
+    cursor: url('../assets/mouse-pointer.png'), auto;
     user-select: all;
     z-index: 8;
     position: relative;
@@ -309,7 +310,7 @@ input[type="search"]::-webkit-search-cancel-button {
     top: -80px;
     right: -312px;
     overflow: hidden;
-    cursor: pointer;
+    cursor: url('../assets/mouse-pointer.png'), auto;
     z-index: 1;
     transition: color 0.2s ease;
 }
@@ -366,7 +367,7 @@ input[type="search"]::-webkit-search-cancel-button {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: -1px;
     font-weight: 800;
-    cursor: pointer;
+    cursor: url('../assets/mouse-pointer.png'), auto;
 
 }
 
@@ -376,7 +377,7 @@ input[type="search"]::-webkit-search-cancel-button {
     color: white;
     font-size: 17px;
     border: none;
-    cursor: pointer;
+    cursor: url('../assets/mouse-pointer.png'), auto;
 
 }
 .toolbarBooking .booking{
@@ -390,7 +391,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .toolbarBooking .choice{
     position: relative;
     bottom: -15px;
-    cursor: pointer;
+    cursor: url('../assets/mouse-pointer.png'), auto;
 }
 
 
@@ -444,7 +445,7 @@ h2{
 }
  #prevButn:hover{
     color: rgb(236, 240, 17);
-    cursor: pointer;
+    cursor: url('../assets/mouse-pointer.png'), auto;
  }
  #nextButn{
     width: 20px;
@@ -458,7 +459,7 @@ h2{
  }
  #nextButn:hover{
     color: rgb(236, 240, 17);
-    cursor: pointer;
+    cursor: url('../assets/mouse-pointer.png'), auto;
  }
 #Wrapper{
     scroll-behavior: smooth;
@@ -565,7 +566,7 @@ h2{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    cursor: url('../assets/mouse-pointer.png'), auto;
     position: relative;
     right: 55px;
     overflow: hidden;
@@ -622,7 +623,7 @@ h2{
 }
 #prevBtn2:hover{
     color: rgb(236, 240, 17);
-    cursor: pointer;
+    cursor: url('../assets/mouse-pointer.png'), auto;
 }
 #nextBtn2{
     width: 20px;
@@ -636,7 +637,7 @@ h2{
 }
 #nextBtn2:hover{
     color: rgb(236, 240, 17);
-    cursor: pointer;
+    cursor: url('../assets/mouse-pointer.png'), auto;
 }
 .titleFutureshow{
     color: white;
@@ -766,6 +767,7 @@ h2{
     align-items: center;
     flex-direction: row;
     scroll-behavior: smooth;
+    cursor: url('../assets/mouse-pointer.png'), auto;
 }
 #discountsWrapper{
     scroll-behavior: smooth;
@@ -783,6 +785,7 @@ h2{
     margin-right: 45px;
     position: relative;
     top: -150px;
+    cursor: url('../assets/mouse-pointer.png'), auto;
 }
 
 #prevDiscountsBtn,#nextDiscountsBtn {
@@ -799,7 +802,7 @@ h2{
 }
 #prevDiscountsBtn:hover {
     color: rgb(236, 240, 17);
-    cursor: pointer;
+    cursor: url('../assets/mouse-pointer.png'), auto;
 }
 #nextDiscountsBtn {
     right: -1358px;
@@ -807,7 +810,7 @@ h2{
 }
 #nextDiscountsBtn:hover {
     color: rgb(236, 240, 17);
-    cursor: pointer;
+    cursor: url('../assets/mouse-pointer.png'), auto;
 }
 .buttonAllDiscounts{
     width: 260px;
@@ -821,7 +824,7 @@ h2{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    cursor: url('../assets/mouse-pointer.png'), auto;
     position: relative;
     top: -460px;
     right: -568px;
@@ -919,7 +922,7 @@ h2{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    cursor: url('../assets/mouse-pointer.png'), auto;
     position: relative;
     top: -70px;
     overflow: hidden;
@@ -953,6 +956,7 @@ h2{
     position: relative;
     top: -900px;
     font-family: Tahoma;
+    cursor: url('../assets/mouse-pointer.png'), auto;
 }
 .introAllEntertainment{
     width:638px;
@@ -977,6 +981,7 @@ h2{
 .AllProgramEntertainment img{
     margin: 10px;
     border-radius: 5px;
+    cursor: url('../assets/mouse-pointer.png'), auto;
 }
 
 /*------------------------------------------------------*/
@@ -987,7 +992,7 @@ h2{
     color: white;
     position: relative;
     top: -500px;
-    right: -230px;
+    right: -130px;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
 }
@@ -998,8 +1003,8 @@ h2{
     background: #7404bf;
     background: linear-gradient(90deg, rgba(116, 4, 191, 1) 45%, rgb(58, 103, 200) 100%);
     position: relative;
-    top: -450px;
-    right: -200px;
+    top: -700px;
+    right: -180px;
     font-size: 30px;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
@@ -1007,16 +1012,16 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    cursor: url('../assets/mouse-pointer.png'), auto;
     position: relative;
-    top: -700px;
-    right: -280px;
+    
 }
 .logoFacebook{
     position: relative;
     top: -500px;
-    right: -150px;
+    right: -50px;
     z-index: 5;
+    cursor: url('../assets/mouse-pointer.png'), auto;
 }
 .zaloChat{
     width: 400px;
@@ -1025,8 +1030,8 @@ h2{
     background: #7404bf;
     background: linear-gradient(90deg, rgba(116, 4, 191, 1) 45%, rgb(58, 103, 200) 100%);
     position: relative;
-    top: -400px;
-    right: -200px;
+    top: -780px;
+    left: 100px;
     font-size: 30px;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
@@ -1034,16 +1039,15 @@ h2{
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    cursor: pointer;
-    position: relative;
-    top: -780px;
-    left: 200px;
+    cursor: url('../assets/mouse-pointer.png'), auto;
+
 }
 .logoZalo{
     position: relative;
     top: -600px;
-    right: -480px;
+    right: -380px;
     z-index: 5;
+    cursor: url('../assets/mouse-pointer.png'), auto;
 }
 
 .informationContact{
@@ -1052,7 +1056,7 @@ h2{
     background-color: rgb(42, 106, 179);
     position: relative;
     top: -1400px;
-    right: -770px;
+    right: -690px;
     border-radius: 5px;
 }
 .informationContact .contact{
@@ -1092,6 +1096,7 @@ h2{
     left: 50px;
     font-size: 15px;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
+    cursor: url('../assets/mouse-pointer.png'), auto;
 }
 
 .boxFillInformation .fillEmail{
@@ -1105,12 +1110,13 @@ h2{
     left: 50px;
     font-size: 15px;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
+    cursor: url('../assets/mouse-pointer.png'), auto;
 }
 
 .boxFillInformation .fillFeedback{
-    padding-left: 10px;
-    width: 490px;
-    height: 300px;
+    padding: 15px 10px;
+    width: 480px;
+    height: 265px;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 5px;
     position: relative;
@@ -1120,6 +1126,7 @@ h2{
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     text-align: left;
     text-justify: top;
+    cursor: url('../assets/mouse-pointer.png'), auto;
 }
 
 .boxFillInformation .submit{
@@ -1158,6 +1165,269 @@ h2{
 }
 
 .boxFillInformation .submit:hover{
-    cursor: pointer;
+    cursor: url('../assets/mouse-pointer.png'), auto;
     color: white;
+}
+
+/*  ------------------------------------------------------*/
+/*Footer*/
+
+.footer{
+    width: 102%;
+    height: 800px;
+    background: #7404bf;
+    background: linear-gradient(90deg, rgb(105, 51, 141) 10%, rgb(58, 103, 200) 100%);
+    position: relative;
+    top: -1200px;
+    left: -10px;
+    
+}
+.ourInformation .logoCineMoon{
+    width: 260px;
+    height: 250px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.ourInformation .slogan{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: -65px;
+    left: 80px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+/*Button*/
+.ourInformation .btnBooking{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #fff700);
+    border-radius: 5px;
+    width:180px;
+    height: 45px;
+    font-weight: bold;
+    font-size: 14.5px;
+    font-family:  Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+    position:absolute;
+    left: 75px;
+    top: 250px;
+    overflow: hidden;
+    transition: color 0.2s ease;
+    z-index: 1;
+    cursor: url('../assets/mouse-pointer.png'), auto;
+
+}
+.ourInformation .btnBooking::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #7404bf;
+    background: linear-gradient(90deg, rgba(116, 4, 191, 1) 45%, rgb(58, 103, 200) 100%);
+    transition: left 0.5s ease;
+    z-index: -1;
+}
+.ourInformation .btnBooking:hover::before{
+    left: 0;
+}
+.ourInformation .btnBooking:hover{
+    color: white;
+}
+
+
+.ourInformation .btnPopcorn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff700;
+    border: 1.2px solid #fff700;
+    border-radius: 5px;
+    width:180px;
+    height: 45px;
+    font-weight: bold;
+    font-size: 14.5px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+    position:absolute;
+    left: 275px;
+    top: 250px;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.2 ease;
+    cursor: url('../assets/mouse-pointer.png'), auto;  
+}
+.ourInformation .btnPopcorn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #e09318 30%, #ffcc00);
+    transition: left 0.5s ease;
+    z-index: -1;
+}
+.ourInformation .btnPopcorn:hover::before{
+    left: 0;
+}
+.ourInformation .btnPopcorn:hover{
+    color: rgb(255, 255, 255);
+}
+
+/*icons*/
+.ourInformation .socialIcons {
+    display: flex;
+    gap: 16px; /* khoảng cách giữa các icon */
+    align-items: center;
+  }
+
+.socialIcons i,.iconZalo {
+    font-size: 20px;
+    cursor: url('../assets/mouse-pointer.png'), auto;
+    color: white;
+    position: relative;
+    right: -75px;
+    bottom: -20px;
+  }
+
+.socialIcons i:hover,.iconZalo:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.ourInformation .language{
+    width: 150px;
+    position: absolute;
+    top: 370px;
+    left: 70px;
+    color: white;
+    font-size: 20px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ourInformation .flagVietNam{
+    position: relative;
+    left: 180px;
+    top: 40px;
+}
+.lineFooter{
+    width: 90%;
+    border: 1px solid white;
+    position: relative;
+    top: 330px;
+    right: 0px;
+}
+.footerText{
+    color: white;
+    font-size: 15px;
+    position: relative;
+    top: 350px;
+    left: 70px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footerText1{
+    color: white;
+    font-size: 15px;
+    position: relative;
+    top: 315px;
+    left: 900px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+/*Mở rộng thông tin*/
+.extraInformation{
+    flex-wrap: wrap;
+    width:55%;
+    height: 200px;
+    position: relative;
+    top: -300px;
+    right: -470px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Tên các thông mở rộng*/
+.extraInformation .nameInfor1,.nameInfor2,.nameInfor3,
+.nameInfor4,.nameInfor5,.nameInfor6{
+    color: white;
+    font-size: 20px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+/*Chi tiết các thông tin*/
+.extraInformation .detailsInfor1,
+.detailsInfor2,.detailsInfor3,.detailsInfor4,
+.detailsInfor5,.detailsInfor6{
+    color: white;
+    font-size: 15px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+ .detailsInfor1 p:hover,.detailsInfor2 p:hover,
+ .detailsInfor3 p:hover,.detailsInfor4 p:hover,
+.detailsInfor5 p:hover,.detailsInfor6 p:hover{
+    color: rgb(242, 255, 0);
+    font-size: 15px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Vị trí các thông tin*/
+.extraInformation .nameInfor1{
+    position: relative;
+    top: -105px;
+}
+.extraInformation .detailsInfor1{
+    position: relative;
+    top: -20px;
+    left: -90px;
+}
+.extraInformation .nameInfor2{
+    position: relative;
+    top: -105px;
+}
+.extraInformation .detailsInfor2{
+    position: relative;
+    top: -20px;
+    left: -110px;
+}
+.extraInformation .nameInfor3{
+    position: relative;
+    top: -105px;
+}
+.extraInformation .detailsInfor3{
+    position: relative;
+    top: -20px;
+    left: -90px;
+}
+.extraInformation .nameInfor4{
+    position: relative;
+    top: 95px;
+    left: -620px;
+}
+.extraInformation .detailsInfor4{
+    position: relative;
+    top: -70px;
+    left: 5px;
+}
+.extraInformation .nameInfor5{
+    position: relative;
+    top: -135px;
+    left: 110px;
+}
+.extraInformation .detailsInfor5{
+    position: relative;
+    top: 15px;
+    left: 5px;
+}
+.extraInformation .nameInfor6{
+    position: relative;
+    top: -338px;
+    left: 270px;
+}
+.extraInformation .detailsInfor6{
+    position: relative;
+    top: -135px;
+    left: 120px;
 }
