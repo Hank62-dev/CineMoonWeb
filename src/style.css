@@ -1,3 +1,4 @@
+
 body{
     background: #b3b3b3;
     background: radial-gradient(circle, rgb(124, 92, 175) 0%, rgb(1, 15, 36)70%);
@@ -8,6 +9,11 @@ body{
 a{
     text-decoration: none;
     color: #fff;
+}
+
+:root{
+    --primary-background: #7404bf;
+    --primary-background1: linear-gradient(90deg, rgba(116, 4, 191, 1) 45%, rgb(58, 103, 200) 100%);
 }
 
 #boxToolBar {
@@ -64,8 +70,8 @@ a{
     left: -100%;
     width: 100%;
     height: 100%;
-    background: #7404bf;
-    background: linear-gradient(90deg, rgba(116, 4, 191, 1) 45%, rgb(58, 103, 200) 100%);
+    background: var(--primary-background);
+    background: var(--primary-background1);
     transition: left 0.5s ease;
     z-index: -1;
 }
@@ -322,7 +328,7 @@ input[type="search"]::-webkit-search-cancel-button {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: #7404bf;
+    background: var(--primary-background);
     background: linear-gradient(90deg, rgba(116, 4, 191, 1) 45%, rgba(62, 62, 222, 1) 100%);
     transition: left 0.5s ease;
     z-index: -1;
@@ -586,8 +592,8 @@ h2{
     left: -100%;
     width: 100%;
     height: 100%;
-    background: #7404bf;
-    background: linear-gradient(90deg, rgba(116, 4, 191, 1) 45%, rgb(58, 103, 200) 100%);
+    background: var(--primary-background);
+    background: var(--primary-background1);
     transition: left 0.5s ease;
     z-index: -1;
 }
@@ -839,8 +845,8 @@ h2{
     left: -100%;
     width: 100%;
     height: 100%;
-    background: #7404bf;
-    background: linear-gradient(90deg, rgba(116, 4, 191, 1) 45%, rgb(58, 103, 200) 100%);
+    background: var(--primary-background);
+    background: var(--primary-background1);
     transition: left 0.5s ease;
     z-index: -1;
 }
@@ -936,8 +942,8 @@ h2{
     left: -100%;
     width: 100%;
     height: 100%;
-    background: #7404bf;
-    background: linear-gradient(90deg, rgba(116, 4, 191, 1) 45%, rgb(58, 103, 200) 100%);
+    background: var(--primary-background);
+    background: var(--primary-background1);
     transition: left 0.5s ease;
     z-index: -1;
 }
@@ -1000,8 +1006,8 @@ h2{
     width: 400px;
     height: 90px;
     color: white;
-    background: #7404bf;
-    background: linear-gradient(90deg, rgba(116, 4, 191, 1) 45%, rgb(58, 103, 200) 100%);
+    background: var(--primary-background);
+    background: var(--primary-background1);
     position: relative;
     top: -700px;
     right: -180px;
@@ -1027,8 +1033,8 @@ h2{
     width: 400px;
     height: 90px;
     color: white;
-    background: #7404bf;
-    background: linear-gradient(90deg, rgba(116, 4, 191, 1) 45%, rgb(58, 103, 200) 100%);
+    background: var(--primary-background);
+    background: var(--primary-background1);
     position: relative;
     top: -780px;
     left: 100px;
@@ -1155,8 +1161,8 @@ h2{
     left: -100%;
     width: 100%;
     height: 100%;
-    background: #7404bf;
-    background: linear-gradient(90deg, rgba(116, 4, 191, 1) 45%, rgb(58, 103, 200) 100%);
+    background: var(--primary-background);
+    background: var(--primary-background1);
     transition: left 0.5s ease;
     z-index: -1;
 }
@@ -1174,11 +1180,11 @@ h2{
 
 .footer{
     width: 102%;
-    height: 800px;
-    background: #7404bf;
+    height: 1000px;
+    background: var(--primary-background);
     background: linear-gradient(90deg, rgb(105, 51, 141) 10%, rgb(58, 103, 200) 100%);
-    position: relative;
-    top: -1200px;
+    position: absolute;
+    bottom: -6600px;
     left: -10px;
     
 }
@@ -1226,8 +1232,8 @@ h2{
     left: -100%;
     width: 100%;
     height: 100%;
-    background: #7404bf;
-    background: linear-gradient(90deg, rgba(116, 4, 191, 1) 45%, rgb(58, 103, 200) 100%);
+    background: var(--primary-background);
+    background: var(--primary-background1);
     transition: left 0.5s ease;
     z-index: -1;
 }
@@ -1365,8 +1371,8 @@ h2{
     font-size: 15px;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
- .detailsInfor1 p:hover,.detailsInfor2 p:hover,
- .detailsInfor3 p:hover,.detailsInfor4 p:hover,
+.detailsInfor1 p:hover,.detailsInfor2 p:hover,
+.detailsInfor3 p:hover,.detailsInfor4 p:hover,
 .detailsInfor5 p:hover,.detailsInfor6 p:hover{
     color: rgb(242, 255, 0);
     font-size: 15px;
@@ -1431,3 +1437,5 @@ h2{
     top: -135px;
     left: 120px;
 }
+
+
