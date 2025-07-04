@@ -35,7 +35,7 @@ a{
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
 }
-.intro .logoCineStar{
+.intro .logoCineMoon{
     width: 500px;
     height: auto;
     position: relative;
@@ -146,7 +146,7 @@ input[type="search"]::-webkit-search-cancel-button {
     cursor: url('../assets/mouse-pointer.png'), auto;
 }
 
-.intro .logoCineStar{
+.intro .logoCineMoon{
     Width: 160px;
     Height: 150px;
     position: absolute;

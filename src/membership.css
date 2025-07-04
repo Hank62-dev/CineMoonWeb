@@ -225,251 +225,61 @@ input[type="search"]::-webkit-search-cancel-button {
     transition: color 0.4s ease;
 }
 
+/*-----------------------------------------------------------*/
+/*Chương trình thành viên*/
 
-/*----------------------------------------------------------*/
-
-/*Design toolbarBooking*/
-.toolbarBooking{
-    height: 90px;
-    width: 1160px;
-    background-color: white;
-    color: rgb(132, 11, 208);
-    border-radius: 5px;
-    position: relative;
-    bottom: -160px;
-    right: -115px;   
+.memberShip{
     display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 20px;
-    font-weight: bold;
+    flex-direction: column;
+    position: relative;
+    bottom: -200px;
 }
-.toolbarBooking p {
-    border: 1px solid rgb(105, 99, 99);
-    border-radius: 5px;
-    width: 165px;
-    height: 20px;
+.memberShip .boxItem{
     display: flex;
-    justify-content: center;  /* Căn giữa ngang */
-    align-items: center; /* Căn giữa dọc */
-    padding: 10px;  
+    flex-direction: row;
+    gap: 50px;
+    margin-bottom: 50px;
     position: relative;
+    right: -55px;
+    
+}
+.boxItem .content{
+    width: 660px;
+    color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: -1px;
-    font-weight: 800;
-    cursor: url('../assets/mouse-pointer.png'), auto;
-
+    font-weight: 600;
 }
-
-.toolbarBooking .book{
-    width: 95px;   
-    background-color: rgba(85, 7, 134, 0.859);
-    color: white;
-    font-size: 17px;
-    border: none;
-    cursor: url('../assets/mouse-pointer.png'), auto;
-
-}
-.toolbarBooking .booking{
-
-    width: 200px;
-    color: rgb(58, 57, 57);
+.boxItem .content .title{
     font-size: 25px;
-    border: none;
-
-}
-.toolbarBooking .choice{
-    position: relative;
-    bottom: -15px;
-    cursor: url('../assets/mouse-pointer.png'), auto;
-}
-
-
-.toolbarBooking .choice span{
-    display: inline-block;
-    color: rgb(62, 59, 59);
-    transform: rotate(-180deg);
-    font-size: 25px;
-    position: relative;
-    right: -165px;
-    top: -57px;
-}
-
-
-
-/*------------------------------------------------------*/
-/*PHIM ĐANG CHIẾU*/
-h2{
-
-    width: 370px;
-    color: white;
-    position: relative;
-    bottom: -200px;
-    right: -520px;
-    font-family:  Verdana, sans-serif;
-    font-size: 40px;
-    font-weight: bolder;
-    letter-spacing: -4px;
-}
-.nowShowing{
-    width: 89%;
-    height: 580px;
-    position: relative;
-    bottom: -200px;
-    right: -80px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    scroll-behavior: smooth;
-}
-
- #prevButn{
-    width: 20px;
-    color: white;
-    z-index: 8;
-    position: relative;
-    right: -45px;
-    bottom: -450px;
-    font-size: 3rem;
     font-weight: bolder;
 }
- #prevButn:hover{
-    color: rgb(236, 240, 17);
-    cursor: url('../assets/mouse-pointer.png'), auto;
- }
- #nextButn{
-    width: 20px;
-    color: white;
-    z-index: 8;
-    position: relative;
-    right: -1302px;
-    top: -238px;
-    font-size: 3rem;
-    font-weight: bolder;
- }
- #nextButn:hover{
-    color: rgb(236, 240, 17);
-    cursor: url('../assets/mouse-pointer.png'), auto;
- }
-#Wrapper{
-    scroll-behavior: smooth;
-    overflow-x: auto;
-    scrollbar-width: none;         /* Firefox */
-    -ms-overflow-style: none; 
-}
-#Wrapper::-webkit-scrollbar {
-    display: none;                 /* Chrome, Safari */
-}
-.nowShowing .movieItem{
-    height: 570px;
-    width: auto;
-    position: relative;
-    left: -39px;
-    top: 145px;
-}
-/*poster phim**/
-.nowShowing .movieBox {
-    height: 505px;
-    position: relative;
-    right: -75px;
+.boxItem img{
     border-radius: 5px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
-
 }
-.imageMovie {
-    width: 100%;
-    max-width: 270px;
-    height: auto;
-    border-radius: 2px;
-}
-.imageMovie::before{
-    content: '';
+.boxItem img:hover{
+    box-shadow:  0 0 15px rgb(228, 232, 0);
+    transition: ease 0.5s;
 }
 
-.movieBox {
+.book {
     position: relative;
-    display: inline-block;
-    max-width: 270px;
-}
-
-.review {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    width: 100%;                 
-    height: 370px;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.2s ease, transform 0.2s ease;
-    padding: 15px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    pointer-events: none; 
-}
-
-/* hiện review */
-.movieBox:hover .review {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-}
-
-.review i{
-    color: yellow;
-    position: relative;
-    left: -3px;
-}
-
-/*Tiêu đề phim*/
-.title{
-    color: white;
-    font-size: 18.1px;
-    position: relative;
-    top: -10px;
-    text-align: center;
-}
-.title:hover{
-    color:rgb(253, 253, 17);
-}
-/*trailer*/
-.trailer{
-    width: 145px;
-    text-decoration: underline;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
-}
-/*Đặt vé*/
-.btnBook{
-    width: 145px;
+    z-index: 5;
+    width: 250px;
     height: 40px;
-    background-color: rgb(224, 224, 6);
     border-radius: 5px;
-    font-size: 17px;
-    font-family: Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: -1px;
-    font-weight: bold;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    cursor: url('../assets/mouse-pointer.png'), auto;
-    position: relative;
-    right: 55px;
+    color: black;
+    background-color: rgb(228, 232, 0); 
+    font-size: 20px;
+    font-weight: 700;
     overflow: hidden;
-    z-index: 1;
-    transition: color 0.2s ease;
+    transition: color 0.3s ease;
 }
 
 
-.btnBook:hover{
-    color: white;
-}
-
-.btnBook::before{
+.book::before{
     content: '';
     position: absolute;
     top: 0;
@@ -481,265 +291,16 @@ h2{
     transition: left 0.5s ease;
     z-index: -1;
 }
-.btnBook:hover::before{
+
+.book:hover::before{
     left: 0;
 }
 
-/*Trailer toolbar and booking*/
-.toolReview{
-    position: relative;
-    top: -20px;
-    right: -88px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-
-/*------------------------------------------------------*/
-
-/*PHIM SẮP CHIẾU*/
-
-
-#prevBtn2{
-    width: 20px;
-    color: white;
-    z-index: 8;
-    position: relative;
-    right: -15px;
-    bottom: -400px;
-    font-size: 3rem;
-    font-weight: bolder;
-}
-#prevBtn2:hover{
-    color: rgb(236, 240, 17);
+.book:hover{
     cursor: url('../assets/mouse-pointer.png'), auto;
-}
-#nextBtn2{
-    width: 20px;
-    color: white;
-    z-index: 8;
-    position: relative;
-    right: -1358px;
-    top: -330px;
-    font-size: 3rem;
-    font-weight: bolder;
-}
-#nextBtn2:hover{
-    color: rgb(236, 240, 17);
-    cursor: url('../assets/mouse-pointer.png'), auto;
-}
-.titleFutureshow{
-    color: white;
-    position: relative;
-    bottom: -150px;
-    right: -525px;
-}
-
-#futureWrapper{
-    scroll-behavior: smooth;
-    overflow-x: auto;
-    scrollbar-width: none;         /* Firefox */
-    -ms-overflow-style: none; 
-}
-#futureWrapper::-webkit-scrollbar {
-    display: none;                 /* Chrome, Safari */
-}
-
-.futureShow{
-    width: 93%;
-    height: 580px;
-    position: relative;
-    bottom: -90px;
-    right: -50px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    scroll-behavior: smooth;
-
-}
-/*Thẻ phim, poster*/
-.movieCard {
-    margin-right: 70px;
-    border-radius: 5px;
-    width: 270px;
-    height: 402px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
-    position: relative;
-    right: -1px;
-    top: -89px;
-
-}
-.movieCard .predictShow{
-    color: white;
-    font-size: 15px;
-    position: relative;
-    top: -25px;
-    text-align: center;
-}
-.movieCard .titleMovie{
-    color: white;
-    font-size: 18.1px;
-    position: relative;
-    top: -45px;
-    text-align: center;
-}
-.movieCard .titleMovie:hover{
-    color:rgb(253, 253, 17);
-}
-.movieCard .reviewBox {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    width: 100%;                 
-    height: 403px;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    opacity: 0;
-    transform: translateY(5px);
-    transition: opacity 0.2s ease, transform 0.2s ease;
-    padding: 15px;
-    box-sizing: border-box;
-    border-radius: 3px;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    pointer-events: none; 
-}
-/* hiện review */
-.movieCard:hover .reviewBox {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-}
-.reviewBox i{
-    color: yellow;
-    position: relative;
-    left: -3px;
-}
-
-/*trailer, booking*/
-.toolbarReview {
-    position: absolute;
-    bottom: -165px;
-    right: -75px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.toolbarReview .trailer{
-    position: relative;
-    left: -45px;
-}
-.toolbarReview .btnBook{
-    font-family: Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 14.5px;
-    position: relative;
-    left: -75px;
-}
-
-/*------------------------------------------------------*/
-
-.titleDiscounts{
-    position: relative;
-    right: -50px;
-    bottom: -80px;
-}
-
-.discounts{
-    width: 93%;
-    height: 580px;
-    position: relative;
-    right: -50px;
-    top: -50px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    scroll-behavior: smooth;
-    cursor: url('../assets/mouse-pointer.png'), auto;
-}
-#discountsWrapper{
-    scroll-behavior: smooth;
-    overflow-x: auto;
-    scrollbar-width: none;         /* Firefox */
-    -ms-overflow-style: none; 
-}
-#discountsWrapper::-webkit-scrollbar {
-    display: none;                 /* Chrome, Safari */
-}
-.discounts img{
-    width: 400px;
-    height: auto;
-    border-radius: 5px;
-    margin-right: 45px;
-    position: relative;
-    top: -150px;
-    cursor: url('../assets/mouse-pointer.png'), auto;
-}
-
-#prevDiscountsBtn,#nextDiscountsBtn {
-    width: 20px;
-    color: white;
-    z-index: 8;
-    position: relative;
-    font-size: 3rem;
-    font-weight: bolder;
-}
-#prevDiscountsBtn {
-    right: -15px;
-    bottom: -160px;
-}
-#prevDiscountsBtn:hover {
-    color: rgb(236, 240, 17);
-    cursor: url('../assets/mouse-pointer.png'), auto;
-}
-#nextDiscountsBtn {
-    right: -1358px;
-    top: -570px;
-}
-#nextDiscountsBtn:hover {
-    color: rgb(236, 240, 17);
-    cursor: url('../assets/mouse-pointer.png'), auto;
-}
-.buttonAllDiscounts{
-    width: 260px;
-    height: 40px;
-    background-color: rgb(224, 224, 6);
-    border-radius: 5px;
-    font-size: 17px;
-    font-family: Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: -1px;
-    font-weight: bold;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    cursor: url('../assets/mouse-pointer.png'), auto;
-    position: relative;
-    top: -460px;
-    right: -568px;
-    overflow: hidden;
-    z-index: 1;
-    transition: color 0.2s ease;
-}
-.buttonAllDiscounts::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: var(--primary-background);
-    background: var(--primary-background1);
-    transition: left 0.5s ease;
-    z-index: -1;
-}
-.buttonAllDiscounts:hover::before{
-    left: 0;
-}
-.buttonAllDiscounts:hover{
     color: white;
 }
+
 
 
 
@@ -752,7 +313,7 @@ h2{
     background: var(--primary-background);
     background: linear-gradient(90deg, rgb(105, 51, 141) 10%, rgb(58, 103, 200) 100%);
     position: absolute;
-    bottom: -2400px;
+    bottom: -1400px;
     left: -10px;
     
 }
@@ -1005,5 +566,3 @@ h2{
     top: -135px;
     left: 120px;
 }
-
-

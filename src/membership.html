@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bookPopcorn.css">
+    <link rel="stylesheet" href="./membership.css">
     <title>  CineMoon - Hệ thống rạp chiếu phim hiện đại, giá rẻ bậc nhất toàn cầu</title>
     <link rel="icon" type="image/png" href="../assets/header-logo-web.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
     <div id="boxToolBar">
         <div class="intro">
             <img src="../assets/ticket.png" width="25px;" style=" z-index: 10;position: absolute; right: -435px; bottom: -50px;">
@@ -36,104 +35,46 @@
             <a href="#aboutUs"><h3>Giới thiệu</h3></a>
         </div>
     </div>
-<!--Chọn rạp-->
-    <div class="choiceCinema">
-        <h1>CHỌN RẠP GẦN BẠN</h1>
-        <p>CINEMOON THỦ ĐỨC (TP.HCM)</p>
-    </div>
-<!--Chọn combo-->
-    <h1 class="comboTilte">COMBO 2 NGĂN</h1>
-    <div class="combo">
-        <div class="comboItems">
-            <img src="../assets/COMBO_GAU.png" class="imgItem" alt="COMBO_GAU">
-            <p class="nameCombo">COMBO GẤU</p>
-            <p class="component">1 Coke 32oz + 1 Bắp 2 Ngăn 64OZ Phô Mai + Caramel</p>
-            <p class="price">119,000VND</p>
-            <div class="amount">
-                <p class="minus">-</p>
-                <p>0</p>
-                <p class="plus">+</p>
+
+
+    <!--MEMBER SHIP-->
+    <div class="memberShip" id="memberShip">
+        <div class="boxItem">
+            <div class="content">
+                <p class="title">HẠNG M'FRIEND</p>
+                <ul>
+                    <li>Thẻ thành viên được cấp lần đầu khi khách hàng mua từ 2 vé xem phim bất kỳ tại CineMoon.</li>
+                    <li>Thành viên được tích lũy điểm dựa trên giá trị mua hàng hóa và dịch vụ.</li>
+                    <li>Giảm ngay 10% trên tổng hóa đơn bắp nước khi mua trực tiếp tại quầy.</li>
+                    <li>Nhận 1 vé xem phim 2D miễn phí trong tuần sinh nhật (tính từ Thứ Hai đến Chủ Nhật), áp dụng khi tài khoản tích lũy từ 500 điểm trở lên.</li>
+                    <li>Được ưu tiên tham gia các chương trình ưu đãi, sự kiện đặc biệt dành riêng cho thành viên.</li>
+                </ul>
+                <p class="book">ĐẶT VÉ NGAY</p>
             </div>
+            <a href=""><img src="../assets/ProgramCMember.png" class="imgDiscount1" width="570px;"></a>
         </div>
 
-        <div class="comboItems">
-            <img src="../assets/COMBO_NHA_GAU.png" class="imgItem" alt="COMBO_NHA_GAU">
-            <p class="nameCombo">COMBO NHÀ GẤU</p>
-            <p class="component">4 Coke 22oz + 2 Bắp 2 Ngăn 64OZ Phô Mai + Caramel</p>
-            <p class="price">259,000VND</p>
-            <div class="amount">
-                <p class="minus">-</p>
-                <p>0</p>
-                <p class="plus">+</p>
-            </div>
-        </div>
 
-        <div class="comboItems">
-            <img src="../assets/COMBO_CO_GAU.png" class="imgItem" alt="COMBO_CO_GAU">
-            <p class="nameCombo">COMBO CÓ GẤU</p>
-            <p class="component">2 Coke 32oz + 1 Bắp 2 Ngăn 64OZ Phô Mai + Caramel</p>
-            <p class="price">129,000VND</p>
-            <div class="amount">
-                <p class="minus">-</p>
-                <p>0</p>
-                <p class="plus">+</p>
+
+        <div class="boxItem">
+            <a href=""><img src="../assets/ProgramCVip.png" class="imgDiscount1" width="570px;"></a>
+            <div class="content">
+                <p class="title">HẠNG M'VIP</p>
+                <ul>
+                    <li>Thẻ được cấp cho thành viên M'Friend khi đạt mốc tích lũy từ 10.000 điểm trở lên.</li>
+                    <li>Giảm ngay 15% trên hóa đơn bắp nước khi mua trực tiếp tại quầy.</li>
+                    <li>Nhận 2 vé xem phim và combo 1 bắp và 2 nước trong tuần sinh nhật (tính từ Thứ Hai đến Chủ Nhật)</li>
+                    <li>Có cơ hội nhận vé tham dự các buổi Lễ Ra Mắt Phim và tham gia nhiều chương trình khuyến mãi hấp dẫn từ CineMoon.</li>
+                </ul>
+                <p class="book">ĐẶT VÉ NGAY</p>
             </div>
+            
         </div>
     </div>
 
 
-    <!--Chọn nước uống-->
-    <h1 class="tilteDrink">NƯỚC NGỌT</h1>
-    <div class="drinks">
-        <div class="drinkItem">
-            <img src="../assets/coca.png" alt="cocacola">
-            <p class="nameDrink">COCA COLA</p>
-            <p class="priceDrink">40,000VND</p>
-            <div class="amount">
-                <p class="minus">-</p>
-                <p>0</p>
-                <p class="plus">+</p>
-            </div>
-        </div>
 
-
-        <div class="drinkItem">
-            <img src="../assets/fanta.jpg" alt="Fanta">
-            <p class="nameDrink">FANTA</p>
-            <p class="priceDrink">40,000VND</p>
-            <div class="amount">
-                <p class="minus">-</p>
-                <p>0</p>
-                <p class="plus">+</p>
-            </div>
-        </div>
-
-
-        <div class="drinkItem">
-            <img src="../assets/COKE-ZERO.png" alt="COKE-ZERO">
-            <p class="nameDrink">COKE_ZERO</p>
-            <p class="priceDrink">40,000VND</p>
-            <div class="amount">
-                <p class="minus">-</p>
-                <p>0</p>
-                <p class="plus">+</p>
-            </div>
-        </div>
-
-
-        <div class="drinkItem">
-            <img src="../assets/sprite.png" alt="Sprite">
-            <p class="nameDrink">SPRITE</p>
-            <p class="priceDrink">40,000VND</p>
-            <div class="amount">
-                <p class="minus">-</p>
-                <p>0</p>
-                <p class="plus">+</p>
-            </div>
-        </div>
-    </div>
-
-<!--Footer-->
+    <!--Footer-->
     <div class="footer">    
         <div class="ourInformation">
             <img src="../assets/header-logo.png" width="260px" height="250px" alt="logoCineMoon" class="logoCineMoon">
