@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bookPopcorn.css">
+    <title>  CineMoon - Hệ thống rạp chiếu phim hiện đại, giá rẻ bậc nhất toàn cầu</title>
+    <link rel="icon" type="image/png" href="../assets/header-logo-web.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="boxToolBar">
+        <div class="intro">
+            <img src="../assets/ticket.png" width="25px;" style=" z-index: 10;position: absolute; right: -435px; bottom: -50px;">
+            <a href="./bookTicket.html"><button class="btnBooking"> ĐẶT VÉ NGAY</button></a>
+            <img src="../assets/popcorn.png" width="35px;" style=" z-index: 10;position: absolute; right: -575px; bottom: -55px;">
+            <a href="./bookPopcorn.html"><button class="btnPopcorn">ĐẶT BẮP NƯỚC</button></a>
+            <div class="search-container">
+                <input type="search" placeholder="Tìm phim, rạp..." id="search">
+                <i class="fa-solid fa-magnifying-glass" ></i>
+            </div>
+            <a href="../src/index.html"><img src="../assets/header-logo.png" width="20px" height="auto" alt="logoCineStar" class="logoCineStar"></a>
+            <p>VÕ GIA HUY</p>   
+            <img src="../assets/flagVietnam.png" width="40px" alt="flagVietNam" class="flagVietNam">
+            <img src="../assets/flagamerica.png" width="30px" alt="flagAmerica" class="flagAmerica">
+        </div>
+        
+        <hr class="lineToolbar">
+        <div class="toolBar">
+            <a href="#selectTheater"><h3 class="toolLeft">Chọn rạp</h3></a>
+            <a href="#showTimes"><h3 class="toolLeft">Lịch chiếu</h3></a>
+            <a href="#discounts"><h3>Khuyến mãi</h3></a>
+            <a href="#eventRetals"><h3>Thuê sự kiện</h3></a>
+            <a href="#entertainmentOptions"><h3>Tất cả các giải trí</h3></a>
+            <a href="#aboutUs"><h3>Giới thiệu</h3></a>
+        </div>
+    </div>
+<!--Chọn rạp-->
+    <div class="choiceCinema">
+        <h1>CHỌN RẠP GẦN BẠN</h1>
+        <p>CINEMOON THỦ ĐỨC (TP.HCM)</p>
+    </div>
+<!--Chọn combo-->
+    <h1 class="comboTilte">COMBO 2 NGĂN</h1>
+    <div class="combo">
+        <div class="comboItems">
+            <img src="../assets/COMBO_GAU.png" class="imgItem" alt="COMBO_GAU">
+            <p class="nameCombo">COMBO GẤU</p>
+            <p class="component">1 Coke 32oz + 1 Bắp 2 Ngăn 64OZ Phô Mai + Caramel</p>
+            <p class="price">119,000VND</p>
+            <div class="amount">
+                <p class="minus">-</p>
+                <p>0</p>
+                <p class="plus">+</p>
+            </div>
+        </div>
+
+        <div class="comboItems">
+            <img src="../assets/COMBO_NHA_GAU.png" class="imgItem" alt="COMBO_NHA_GAU">
+            <p class="nameCombo">COMBO NHÀ GẤU</p>
+            <p class="component">4 Coke 22oz + 2 Bắp 2 Ngăn 64OZ Phô Mai + Caramel</p>
+            <p class="price">259,000VND</p>
+            <div class="amount">
+                <p class="minus">-</p>
+                <p>0</p>
+                <p class="plus">+</p>
+            </div>
+        </div>
+
+        <div class="comboItems">
+            <img src="../assets/COMBO_CO_GAU.png" class="imgItem" alt="COMBO_CO_GAU">
+            <p class="nameCombo">COMBO CÓ GẤU</p>
+            <p class="component">2 Coke 32oz + 1 Bắp 2 Ngăn 64OZ Phô Mai + Caramel</p>
+            <p class="price">129,000VND</p>
+            <div class="amount">
+                <p class="minus">-</p>
+                <p>0</p>
+                <p class="plus">+</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Chọn nước uống-->
+    <h1 class="tilteDrink">NƯỚC NGỌT</h1>
+    <div class="drinks">
+        <div class="drinkItem">
+            <img src="../assets/coca.png" alt="cocacola">
+            <p class="nameDrink">COCA COLA</p>
+            <p class="priceDrink">40,000VND</p>
+            <div class="amount">
+                <p class="minus">-</p>
+                <p>0</p>
+                <p class="plus">+</p>
+            </div>
+        </div>
+
+
+        <div class="drinkItem">
+            <img src="../assets/fanta.jpg" alt="Fanta">
+            <p class="nameDrink">FANTA</p>
+            <p class="priceDrink">40,000VND</p>
+            <div class="amount">
+                <p class="minus">-</p>
+                <p>0</p>
+                <p class="plus">+</p>
+            </div>
+        </div>
+
+
+        <div class="drinkItem">
+            <img src="../assets/COKE-ZERO.png" alt="COKE-ZERO">
+            <p class="nameDrink">COKE_ZERO</p>
+            <p class="priceDrink">40,000VND</p>
+            <div class="amount">
+                <p class="minus">-</p>
+                <p>0</p>
+                <p class="plus">+</p>
+            </div>
+        </div>
+
+
+        <div class="drinkItem">
+            <img src="../assets/sprite.png" alt="Sprite">
+            <p class="nameDrink">SPRITE</p>
+            <p class="priceDrink">40,000VND</p>
+            <div class="amount">
+                <p class="minus">-</p>
+                <p>0</p>
+                <p class="plus">+</p>
+            </div>
+        </div>
+    </div>
+
+<!--Footer-->
+    <div class="footer">    
+        <div class="ourInformation">
+            <img src="../assets/header-logo.png" width="260px" height="250px" alt="logoCineMoon" class="logoCineMoon">
+            <p class="slogan">BE HAPPY, BE A MOON</p>
+            <img src="../assets/ticket.png" width="25px;" style=" z-index: 10;position: absolute; right: -435px; bottom: -50px;">
+            <p class="btnBooking"> ĐẶT VÉ</p>
+            <img src="../assets/popcorn.png" width="35px;" style=" z-index: 10;position: absolute; right: -575px; bottom: -55px;">
+            <p class="btnPopcorn">ĐẶT BẮP NƯỚC</p>
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/cinestarcinemasvietnam" target="_blank"><i class="fab fa-facebook" ></i></a>
+                <a href="https://www.youtube.com/@CinestarCinemasVietnam" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/@cinestarvietnam" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://zalo.me/2861828859391058401" target="_blank"><img src="../assets/iconZalo.png" width="17px;" alt="iconZalo" class="iconZalo"></a>
+            </div>
+            <p class="language">Ngôn ngữ:</p>
+            <img src="../assets/flagVietnam.png" width="40px" alt="flagVietNam" class="flagVietNam"> 
+        </div>
+        <hr class="lineFooter">
+        <p class="footerText">© 2025 CineMoon. Công ty một thành viên CineMoon.</p>
+        <p class="footerText1">Chính sách bảo mật | Điều khoản sử dụng | Chính sách cookie</p>
+
+        <div class="extraInformation">
+            <p class="nameInfor1">TÀI KHOẢN</p>
+            <div class="detailsInfor1">
+                <p>Đăng nhập</p>
+                <p>Đăng kí</p>
+                <p>Membership</p>
+            </div>
+
+            <p class="nameInfor2">XEM PHIM</p>
+            <div class="detailsInfor2">
+                <p>Phim đang chiếu</p>
+                <p>Phim sắp chiếu</p>
+                <p>Suất chiếu đặc biệt</p>
+            </div>
+
+            <p class="nameInfor3">CINEMOON</p>
+            <div class="detailsInfor3">
+                <p>Giới thiệu</p>
+                <p>Liên hệ</p>
+                <p>Tuyển dụng</p>
+            </div>
+
+            <p class="nameInfor4">THUÊ SỰ KIỆN</p>
+            <div class="detailsInfor4">
+                <p>Thuê rạp</p>
+                <p>Các loại hình thuê khác</p>
+            </div>
+
+            <p class="nameInfor5">DỊCH VỤ KHÁC</p>
+            <div class="detailsInfor5">
+                <p>Nhà hàng</p>
+                <p>Kidzone</p>
+                <p>Bowling</p>
+                <p>Billiards</p>
+                <p>Gym</p>
+                <p>Nhà hát Opera</p>
+                <p>Coffee</p>
+            </div>
+
+            <p class="nameInfor6">HỆ THỐNG RẠP</p>
+            <div class="detailsInfor6">
+                <p>Tất cả hệ thống rạp</p>
+                <p>CineMoon Quốc Thanh (TP.HCM)</p>
+                <p>CineMoon Q.6 (TP.HCM)</p>
+                <p>CineMoon Bà Trưng (TP.HCM)</p>
+                <p>CineMoon Huế (Huế)</p>
+                <p>CineMoon Đà Nẵng (Đà Nẵng)</p>
+                <p>CineMoon Mặt Trăng (Mặt Trăng)</p>
+                <p>CineMoon Sao Hỏa (Sao Hỏa)</p>
+                <p>CineMoon Mặt Trời (Mặt Trời)</p>
+                <p>CineMoon Sao Kim (Sao Kim)</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
