@@ -1,4 +1,4 @@
-```
+```markdown
 # 🎬 CineMoon - Rạp chiếu phim 
 
 CineMoon là một giao diện web hiện đại mô phỏng hệ thống đặt vé rạp chiếu phim. Người dùng có thể:
