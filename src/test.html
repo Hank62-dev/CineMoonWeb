@@ -6,17 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="movie-card">
-  <img src="../assets/buon-than-ban-thanh.png" alt="Poster Phim">
-  <div class="overlay">
-    <div class="text">
-      <h3><i class="fa-solid fa-mug-soda"></i>CUỘN BĂNG QUỶ ÁM</h3>
-      <p>Kinh dị - Khởi chiếu: 13.06.2025</p>
-    </div>
+  <a href="#card"><p>Trailer</p></a>
+  <div id="card">
+    <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/WBE7iNSkA10?si=lVItYPJX1v7wpVfq" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen></iframe>
   </div>
-</div>
 
 <style>
+
+#card{
+  display: none;
+  justify-content: center;
+  align-items: end;
+}
+p:focus{
+  display: flex;
+}
+
 .movie-card {
   position: relative;
   width: 270px;

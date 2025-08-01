@@ -1440,3 +1440,11 @@ h2{
 }
 
 
+@media screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 1024) and (max-height: 1366px) {
+  body{
+    background: #f5f1f1;
+    background: radial-gradient(circle, rgb(0, 0, 0) 20%, rgb(0, 0, 0)70%);
+    overflow-y: auto;
+  }
+
+}
