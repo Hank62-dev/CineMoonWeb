@@ -37,7 +37,7 @@ https://yourusername.github.io/CineMoon/
 ---
 
 ## 📁 Cấu trúc thư mục
-
+---
 ```
 CineMoon/
 │
@@ -51,7 +51,7 @@ CineMoon/
 │   └── icons/             # Logo, icon các loại
 └── README.md              # Tài liệu dự án
 ```
-
+---
 ---
 
 ## 🚀 Cách chạy dự án
