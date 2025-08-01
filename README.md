@@ -37,21 +37,20 @@ https://yourusername.github.io/CineMoon/
 ---
 
 ## 📁 Cấu trúc thư mục
----
+
 ```
 CineMoon/
-│
-├── index.html             # Trang chính
+├── index.html
 ├── css/
-│   └── style.css          # Tùy chỉnh giao diện
+│   └── style.css
 ├── js/
-│   └── script.js          # Logic xử lý giao diện
+│   └── script.js
 ├── assets/
-│   ├── img/               # Hình ảnh phim, banner
-│   └── icons/             # Logo, icon các loại
-└── README.md              # Tài liệu dự án
+│   ├── img/
+│   └── icons/
+└── README.md
 ```
----
+
 ---
 
 ## 🚀 Cách chạy dự án
