@@ -1,4 +1,8 @@
 
+html{
+    scroll-behavior: smooth;
+    width: 100%;
+}
 body{
     background: #b3b3b3;
     background: radial-gradient(circle, rgb(124, 92, 175) 0%, rgb(1, 15, 36)70%);
@@ -23,39 +27,42 @@ a{
     width: 100%;
     height: 150px;   
     background: rgb(1, 15, 36);
-    z-index: 1000; 
-   /* box-shadow: 0 2px 10px rgba(0,0,0,0.2); */
+    z-index: 10; 
+    box-sizing: border-box;
 }
 
 /*-----------------------------------------------------------------*/
 /***Design Intro***/
 .intro{
+    display: flex;
+    justify-content: space-between;
     z-index: 6;
+    width: auto;
     position: fixed;
-    top: 8px !important;
+    /*top: 8px !important;*/
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
 }
 .intro .logoCineMoon{
-    width: 500px;
+    width: 13vw;
     height: auto;
     position: relative;
-    right: -120px;
-    bottom: -15px;
+    left: 6vw;
+    top: -2vh;
 }
 .intro .btnBooking{
     text-align: right;
     background: linear-gradient(180deg, #fff700);
     border-radius: 5px;
-    width:125px;
+    width: 135px;
     height: 42px;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 0.9rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
-    position:absolute;
+    position: absolute;
     left: 405px;
     top: 18px;
-    right:530px ;
+    right: 530px ;
     bottom: 58px;
     overflow: hidden;
     transition: color 0.2s ease;
@@ -88,10 +95,10 @@ a{
     background: linear-gradient(360deg, #930fff);
     color: white;
     border-radius: 5px;
-    width:135px;
+    width: 145px;
     height: 42px;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 0.9rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
     position:absolute;
     left: 540px;
@@ -148,15 +155,15 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .intro .logoCineMoon{
-    Width: 160px;
-    Height: 150px;
+    width: 13vw;
+    Height: auto;
     position: absolute;
-    Left: 115px;
-    Top: -16px;
+    left: 6vw;
+    top: -1vh;
     Right: 261px;
     Bottom: 161px;
 }
-.intro p{
+.intro .username{
     overflow: hidden;
     font-weight: 450;
     color: white;
@@ -216,10 +223,17 @@ input[type="search"]::-webkit-search-cancel-button {
     cursor: url('../assets/mouse-pointer.png'), auto;
 }
 .toolLeft{
+    /*
     position: relative;
-    left: -320px;
+    left: -320px;*/
     text-decoration: none !important;
 }
+.leftItems, .rightItems {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
 .toolBar h3:hover{
     color: rgb(255, 225, 0);
     text-decoration: underline;
@@ -1439,12 +1453,49 @@ h2{
     left: 120px;
 }
 
+/*Mobile*/
+@media screen and (max-width: 767px)  {
+    #search{
+        display: none;
+    }
+    .search-container i{
+        padding: 5px;
+        border-radius: 50%;
+        border: 2px solid rgb(255, 255, 255);
+        color: white;
+    }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 1024) and (max-height: 1366px) {
-  body{
-    background: #f5f1f1;
-    background: radial-gradient(circle, rgb(0, 0, 0) 20%, rgb(0, 0, 0)70%);
-    overflow-y: auto;
-  }
+}
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px)  {
+    #search{
+        display: none;
+    }
+    .search-container i{
+        padding: 5px;
+        border-radius: 50%;
+        border: 2px solid rgb(255, 255, 255);
+        color: white;
+    }
+    .intro p{
+        display: none;
+    }
 
+}
+/*Desktop*/
+@media screen and (min-width: 1024px) and (max-width: 1199px)  {
+    #search{
+        display: none;
+    }
+    .search-container i{
+        padding: 5px;
+        border-radius: 50%;
+        border: 2px solid rgb(255, 255, 255);
+        color: white;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #search{
+        display: block;
+    }
 }

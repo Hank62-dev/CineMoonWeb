@@ -14,7 +14,7 @@ const slider = document.getElementById('sliderWrapper');
     });
 
 
-/*Phim đang chiếu**/ 
+/*Thanh trượt phim đang chiếu**/ 
 const slide = document.getElementById('Wrapper');
     const prevButn = document.getElementById('prevButn');
     const nextButn = document.getElementById('nextButn');
@@ -30,7 +30,7 @@ const slide = document.getElementById('Wrapper');
     });
 
 
-/*Phim sắp chiếu*/
+/* Thanh trượt phim sắp chiếu*/
 const wrapper = document.getElementById('futureWrapper');
     const prevBtn2 = document.getElementById('prevBtn2');
     const nextBtn2 = document.getElementById('nextBtn2');
@@ -44,7 +44,7 @@ const wrapper = document.getElementById('futureWrapper');
         wrapper.scrollBy({ left: scrollAmount2, behavior: 'smooth' });
     });
 
-/*Khuyến mãi*/
+/*Thanh trượt khuyến mãi*/
 const discountWrapper = document.getElementById('discountsWrapper');
     const prevDiscountBtn = document.getElementById('prevDiscountsBtn');
     const nextDiscountBtn = document.getElementById('nextDiscountsBtn');
