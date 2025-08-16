@@ -39,16 +39,16 @@ https://yourusername.github.io/CineMoon/
 ## 📁 Cấu trúc thư mục
 
 ```
-CineMoon/
-├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-├── assets/
-│   ├── img/
-│   └── icons/
-└── README.md
+* CineMoon/
+* ├── index.html
+* ├── css/
+* │   └── style.css
+* ├── js/
+* │   └── script.js
+* ├── assets/
+* │   ├── img/
+* │   └── icons/
+* └── README.md
 ```
 
 ---
@@ -97,6 +97,3 @@ Bạn có thể tự do sao chép, sửa đổi nhưng không được sử dụ
 
 ---
 
-⭐ *Nếu bạn thấy dự án hay, hãy để lại ⭐ trên GitHub nhé!*
-
-```
