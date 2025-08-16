@@ -57,7 +57,7 @@ https://yourusername.github.io/CineMoon/
 
 ### ✅ Cách 1: Mở trực tiếp
 
-```bash
+```
 git clone https://github.com/Hank62-dev/CineMoon.git
 cd CineMoon
 ````
