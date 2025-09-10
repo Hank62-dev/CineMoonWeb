@@ -1,5 +1,5 @@
 
-/*Phim đang chiếu**/ 
+/*Thanh trượt phim đang chiếu**/ 
 const slide = document.getElementById('Wrapper');
     const prevButn = document.getElementById('prevButn');
     const nextButn = document.getElementById('nextButn');

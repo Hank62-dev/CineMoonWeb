@@ -2,6 +2,7 @@
 html{
     scroll-behavior: smooth;
     width: 100%;
+    padding: 0; 
 }
 body{
     background: #b3b3b3;
@@ -9,6 +10,7 @@ body{
     overflow-y: auto;
     overflow-x: hidden;
     cursor: url('../assets/mouse-pointer.png'), auto !important;
+    margin: 0;
 }
 a{
     text-decoration: none;
@@ -30,40 +32,128 @@ a{
     z-index: 10; 
     box-sizing: border-box;
 }
-
+.toolbar-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
 /*-----------------------------------------------------------------*/
 /***Design Intro***/
 .intro{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 1vh 2vw;
+    position: relative;
+    width: 100%;
+    height: 100px;
     z-index: 6;
-    width: auto;
-    position: fixed;
-    /*top: 8px !important;*/
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
 }
-.intro .logoCineMoon{
-    width: 13vw;
+.intro-left,
+.intro-center,
+.intro-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.intro-left {
+    margin-left: 60px;
+}
+.intro-center{
+    margin-bottom: 30px;
+}
+.intro-right {
+    margin-right: 130px;
+}
+
+.search-container {
+    position: relative; /* tạo vị trí gốc cho icon */
+    width: fit-content;
+    margin-bottom: 30px;
+    margin-right: 35px;
+    
+}
+
+#search {
+    padding: 10px 35px 10px 15px; 
+    border-radius: 50px;
+    width: 220px;
+    height: 39px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.search-container i {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    color: gray;
+    font-size: 16px;
+    cursor: pointer;
+}
+.intro .username{
+    position: relative;
+    right: -25px;
+    font-weight: 450;
+    color: white;
+    Width: 129px;
+    Height: 45px;
+    margin-left: 0px;
+}
+
+.intro .flagVietNam{
+    width: 35px;
+    height: auto;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
+
+.action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.action-buttons img{
+    cursor: url('../assets/mouse-pointer.png'), auto;
+    
+}
+.intro-left .logoCineMoon{
+    width: 18vw;   
+    width: clamp(40px, 10vw, 150px);      
+    max-width: 190px;    
+    min-width: 130px;    
     height: auto;
     position: relative;
-    left: 6vw;
-    top: -2vh;
+    right: -1vw;
+    top: 2.5vh;
+}
+.btnBooking,
+.btnPopcorn {
+  padding-left: 10px;
+  font-size: 0.9rem;
 }
 .intro .btnBooking{
-    text-align: right;
+    display : flex;
+    align-items: center;
+    flex-direction: row;
     background: linear-gradient(180deg, #fff700);
     border-radius: 5px;
-    width: 135px;
+    width: 155px;
     height: 42px;
+    position: relative;
     font-weight: bold;
     font-size: 0.9rem;
+    padding-left: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
-    position: absolute;
-    left: 405px;
-    top: 18px;
-    right: 530px ;
-    bottom: 58px;
     overflow: hidden;
     transition: color 0.2s ease;
     z-index: 1;
@@ -91,20 +181,18 @@ a{
 
 
 .intro .btnPopcorn{
-    text-align: right;
+    display : flex;
+    align-items: center;
+    flex-direction: row;
     background: linear-gradient(360deg, #930fff);
     color: white;
     border-radius: 5px;
-    width: 145px;
+    width: 165px;
     height: 42px;
+    position: relative;
     font-weight: bold;
     font-size: 0.9rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
-    position:absolute;
-    left: 540px;
-    top: 18px;
-    right:675px ;
-    bottom: 58px;
     overflow: hidden;
     z-index: 1;
     transition: color 0.2 ease;
@@ -133,113 +221,105 @@ input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
   appearance: none;
 }
-.intro #search{
-    padding-left: 15px;
-    border-radius: 50px;
-    width:249px;
-    height: 39px;
-    font-weight: 700;
-    position:absolute;
-    left: 819px;
-    top: 18px;
-    right:1069px;
-    bottom: 58px;
-}
-.intro i{
-    position: absolute;
-    left: 1040px;
-    top: 30px;
-    color: gray;
-    font-size: 15px;
-    cursor: url('../assets/mouse-pointer.png'), auto;
-}
 
-.intro .logoCineMoon{
-    width: 13vw;
-    Height: auto;
-    position: absolute;
-    left: 6vw;
-    top: -1vh;
-    Right: 261px;
-    Bottom: 161px;
-}
-.intro .username{
-    overflow: hidden;
-    font-weight: 450;
-    color: white;
-    Width: 129px;
-    Height: 45px;
-    position: absolute;
-    Left: 1130px;
-    Top: 10px;
-    Right: 1225px;
-    Bottom: 50px;
-}
-
-.intro .flagVietNam{
-    position: absolute;
-    Left: 1231px;
-    Top: 16px;
-    Right: 1331px;
-    Bottom: 50px;
-}
-.intro .flagAmerica{
-    z-index: -1;
-    position: absolute;
-    Left: 1236px;
-    Top: 21px;
-    Right: 1340px;
-    Bottom: 50px;
-}
 
 
 /*---------------------------------------------------------*/
-
 /**Design toolbar**/
-.lineToolbar{
+.lineToolbar {
     opacity: 0.2;
     z-index: 6;
     position: fixed;
-    right: 145px;
-    top: 75px;
-    height: 0.5px;
-    width: 80%;
-    background-color: rgb(123, 117, 109);
-
-}
-.toolBar {
-    z-index: 6;
-    position: fixed;
-    right: 110px;
     display: flex;
     align-items: center;
-    top: 80px;
-    margin: 20px;
-    font-family: sans-serif, Helvetica, sans-serif, Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 15px;
-}
-.toolBar h3{
-    margin: 3px 20px ;
-    cursor: url('../assets/mouse-pointer.png'), auto;
-}
-.toolLeft{
-    /*
-    position: relative;
-    left: -320px;*/
-    text-decoration: none !important;
-}
-.leftItems, .rightItems {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+    justify-content: center;
+    top: 70px;
+    left: 125px;
+    width: 80%;
+    background-color: rgb(123, 117, 109);
 }
 
-.toolBar h3:hover{
+.toolBar {
+    width: 83%;
+    z-index: 6;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-bottom: 40px;
+    top: 100px;
+    font-family: sans-serif, Helvetica, sans-serif, Calibri, 'Trebuchet MS', sans-serif;
+    font-size: clamp(12px, 1.5vw, 15px); /* Responsive font size */
+    gap: clamp(5px, 1.2vw, 15px); /* Responsive gap */
+}
+
+.toolBar h3 {
+    margin: 3px clamp(10px, 1.5vw, 15px); /* Responsive margin */
+    cursor: url('../assets/mouse-pointer.png'), auto;
+    white-space: nowrap;
+}
+
+.toolLeft {
+    text-decoration: none !important;
+}
+
+.leftItems, .rightItems {
+    display: flex;
+    gap: clamp(5px, 1.5vw, 15px); /* Responsive gap */
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    font-size: clamp(10px, 1.2vw, 14px); /* Responsive font size */
+}
+.rightItems{
+    margin-right: 1vw;
+}
+.toolBar h3:hover {
     color: rgb(255, 225, 0);
     text-decoration: underline;
     transition: color 0.4s ease;
 }
 
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 1024px) {
+
+
+    .toolBar h3 {
+        margin: 3px clamp(5px, 1vw, 10px);
+    }
+
+    .lineToolbar {
+        width: 80%;
+        left: 11.5%;
+        top: 65px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .toolBar {
+        width: 95%;
+        margin-left: 2.5%;
+        top: 80px;
+        flex-direction: column;
+        gap: clamp(2px, 0.8vw, 8px);
+    }
+
+    .leftItems, .rightItems {
+        gap: clamp(2px, 0.8vw, 8px);
+        font-size: clamp(8px, 1vw, 11px);
+        justify-content: center;
+    }
+
+    .toolBar h3 {
+        margin: 2px clamp(3px, 0.8vw, 8px);
+    }
+
+    .lineToolbar {
+        width: 90%;
+        left: 5%;
+        top: 60px;
+    }
+}
 
 /*----------------------------------------------------------*/
 /*Design newsHot*/
@@ -271,9 +351,12 @@ input[type="search"]::-webkit-search-cancel-button {
     overflow-x: auto;
     scroll-behavior: smooth;
     gap: 20px;
-    width: 1190px;
+    width: 86.5%;
     scrollbar-width: none;         /* Firefox */
     -ms-overflow-style: none;      /* IE và Edge cũ */
+}
+#sliderWrapper{
+    border-radius: 10px;
 }
 .sliderWrapper::-webkit-scrollbar {
     display: none;                 /* Chrome, Safari */
@@ -295,7 +378,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 #nextBtn{
     position: relative;
-    left: 10px;
+    left: 15px;
 }
 /*tin tức*/
 .movieItem {
@@ -359,83 +442,94 @@ input[type="search"]::-webkit-search-cancel-button {
 /*----------------------------------------------------------*/
 
 /*Design toolbarBooking*/
-.toolbarBooking{
-    height: 90px;
-    width: 1160px;
+.toolbarBooking {
+    height: clamp(60px, 6vw, 90px);
+    width: 81%;
     background-color: white;
     color: rgb(132, 11, 208);
     border-radius: 5px;
     position: relative;
     bottom: -60px;
-    right: -115px;   
+    right: -125px;   
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 20px;
+    gap: 1vw;
+    font-size: clamp(14px, 1.3vw, 20px);
     font-weight: bold;
+    overflow: hidden; /* tránh tràn */
 }
+
 .toolbarBooking p {
-    border: 1px solid rgb(105, 99, 99);
     border-radius: 5px;
-    width: 165px;
-    height: 20px;
+    width: clamp(100px, 12vw, 165px);
+    height: auto;
     display: flex;
-    justify-content: center;  /* Căn giữa ngang */
-    align-items: center; /* Căn giữa dọc */
-    padding: 10px;  
+    justify-content: center;  
+    align-items: center; 
+    padding: 0.5em 0.5em;  
     position: relative;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: -1px;
     font-weight: 800;
     cursor: url('../assets/mouse-pointer.png'), auto;
-
+    white-space: nowrap;
 }
 
-.toolbarBooking .book{
-    width: 95px;   
+.toolbarBooking .book {
+    width: clamp(70px, 7vw, 95px);   
     background-color: rgba(85, 7, 134, 0.859);
     color: white;
-    font-size: 17px;
+    font-size: clamp(13px, 1.2vw, 17px);
     border: none;
     cursor: url('../assets/mouse-pointer.png'), auto;
-
 }
-.toolbarBooking .booking{
 
-    width: 200px;
+.toolbarBooking .booking {
+    width: clamp(140px, 15vw, 200px);
     color: rgb(58, 57, 57);
-    font-size: 25px;
+    font-size: clamp(18px, 2vw, 25px);
     border: none;
-
 }
-.toolbarBooking .choice{
-    position: relative;
-    bottom: -15px;
+
+.toolbarBooking .choice {
+    display: flex;
+    align-items: center;        /* căn giữa dọc */
+    justify-content: space-between;
+    flex: 1;                    /* cho phép co giãn theo chỗ trống */
+    min-width: 20px;           /* tránh quá bé */
+    border: 1px solid rgb(105, 99, 99);
+    border-radius: 5px;
+    padding: 0em 1em;
     cursor: url('../assets/mouse-pointer.png'), auto;
 }
 
-
-.toolbarBooking .choice span{
-    display: inline-block;
-    color: rgb(62, 59, 59);
-    transform: rotate(-180deg);
-    font-size: 25px;
-    position: relative;
-    right: -165px;
-    top: -57px;
+.toolbarBooking .choice p {
+    margin: 0;
+    flex: 1;                    /* chữ tự co */
+    text-align: left;           /* chữ sát bên trái */
+    font-weight: 800;
+    white-space: nowrap;        /* không xuống dòng */
 }
+
+.toolbarBooking .choice span {
+    flex: 0 0 auto;             /* giữ nguyên size mũi tên */
+    margin-left: 0.5em;         /* tạo khoảng cách */
+    transform: rotate(-180deg);
+    font-size: clamp(16px, 1.5vw, 25px);
+    color: rgb(62, 59, 59);
+}
+
+
 
 
 
 /*------------------------------------------------------*/
 /*PHIM ĐANG CHIẾU*/
 h2{
-
-    width: 370px;
+    width: 100%;
     color: white;
-    position: relative;
-    bottom: -100px;
-    right: -520px;
+    text-align: center;
+    margin-top: 150px;
     font-family:  Verdana, sans-serif;
     font-size: 40px;
     font-weight: bolder;
@@ -445,20 +539,22 @@ h2{
     width: 93%;
     height: 580px;
     position: relative;
-    bottom: -100px;
-    right: -50px;
+    bottom: -80px;
+    right: -55px;
     display: flex;
     align-items: center;
     flex-direction: row;
     scroll-behavior: smooth;
 }
-
+.button{
+    width: 100%;
+}
  #prevButn{
     width: 20px;
     color: white;
     z-index: 8;
     position: relative;
-    right: -15px;
+    right: -30px;
     bottom: -350px;
     font-size: 3rem;
     font-weight: bolder;
@@ -467,16 +563,18 @@ h2{
     color: rgb(236, 240, 17);
     cursor: url('../assets/mouse-pointer.png'), auto;
  }
- #nextButn{
-    width: 20px;
+#nextButn {
+    width: 2vw;               
     color: white;
     z-index: 8;
-    position: relative;
-    right: -1362px;
-    top: -338px;
+    position: absolute;       
+    right: 1%;               
+    top: 1200px;
+    transform: translateY(-50%); 
     font-size: 3rem;
     font-weight: bolder;
- }
+}
+
  #nextButn:hover{
     color: rgb(236, 240, 17);
     cursor: url('../assets/mouse-pointer.png'), auto;
@@ -646,12 +744,12 @@ h2{
     cursor: url('../assets/mouse-pointer.png'), auto;
 }
 #nextBtn2{
-    width: 20px;
+    width: 2vw;
     color: white;
     z-index: 8;
-    position: relative;
-    right: -1358px;
-    top: -330px;
+    position: absolute;
+    right: 1%;
+    top: 2050px;
     font-size: 3rem;
     font-weight: bolder;
 }
@@ -661,9 +759,6 @@ h2{
 }
 .titleFutureshow{
     color: white;
-    position: relative;
-    bottom: -150px;
-    right: -525px;
 }
 
 #futureWrapper{
@@ -773,85 +868,96 @@ h2{
 
 .titleDiscounts{
     position: relative;
-    right: -50px;
-    bottom: -80px;
+    margin: 2rem 0 1rem 2%;
+    margin-top: 20rem;
+    margin-bottom: 5rem;
+    font-size: clamp(1.2rem, 3vw, 2.5rem);
 }
 
 .discounts{
-    width: 93%;
-    height: 580px;
-    position: relative;
-    right: -50px;
-    top: -50px;
+    width: 91.6%;
+    height: clamp(230px, 20vw, 50px);
+    margin: 0.5rem auto;
+    margin-bottom: 550px;
     display: flex;
     align-items: center;
     flex-direction: row;
     scroll-behavior: smooth;
     cursor: url('../assets/mouse-pointer.png'), auto;
+    position: relative;    
+}
+.wrapper{
+    position: relative;
 }
 #discountsWrapper{
     scroll-behavior: smooth;
     overflow-x: auto;
     scrollbar-width: none;         /* Firefox */
     -ms-overflow-style: none; 
+    display: flex;
+    flex-direction: row;  /* xếp slider trên, nút dưới */
+    align-items: center;
+    width: 93%;
+    
 }
 #discountsWrapper::-webkit-scrollbar {
     display: none;                 /* Chrome, Safari */
 }
 .discounts img{
-    width: 400px;
+    width: clamp(180px, 30vw, 400px); /* ảnh co dần theo màn hình */
     height: auto;
     border-radius: 5px;
-    margin-right: 45px;
-    position: relative;
-    top: -150px;
+    margin-right: clamp(15px, 3vw, 45px);
     cursor: url('../assets/mouse-pointer.png'), auto;
 }
 
-#prevDiscountsBtn,#nextDiscountsBtn {
-    width: 20px;
+#prevDiscountsBtn,
+#nextDiscountsBtn {
+    width: clamp(30px, 0.5vw, 50px);
     color: white;
     z-index: 8;
-    position: relative;
-    font-size: 3rem;
+    position: absolute; /* bám theo container */
+    top: 35%;
+    transform: translateY(-50%);
+    font-size: clamp(2rem, 3vw, 3rem);
     font-weight: bolder;
+    cursor: pointer;
 }
 #prevDiscountsBtn {
-    right: -15px;
-    bottom: -160px;
-}
-#prevDiscountsBtn:hover {
-    color: rgb(236, 240, 17);
-    cursor: url('../assets/mouse-pointer.png'), auto;
+    left: 1%;
 }
 #nextDiscountsBtn {
-    right: -1358px;
-    top: -570px;
+    right: 0%;
 }
+
+#prevDiscountsBtn:hover,
 #nextDiscountsBtn:hover {
     color: rgb(236, 240, 17);
     cursor: url('../assets/mouse-pointer.png'), auto;
 }
+
 .buttonAllDiscounts{
-    width: 260px;
-    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(150px, 20vw, 260px);
+    height: clamp(10px, 4vw, 40px);
     color: black;
     background-color: rgb(224, 224, 6);
     border-radius: 5px;
-    font-size: 17px;
-    font-family: Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: -1px;
+    font-size: clamp(12px, 1.5vw, 17px);
     font-weight: bold;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: -1px;
     cursor: url('../assets/mouse-pointer.png'), auto;
-    position: relative;
-    top: -460px;
-    right: -568px;
+    position: absolute;   
+    bottom: -2.8rem;         
+    left: 50%;            
+    transform: translateX(-50%);
     overflow: hidden;
-    z-index: 1;
+    z-index: 2;
     transition: color 0.2s ease;
+
 }
 .buttonAllDiscounts::before{
     content: '';
@@ -872,84 +978,129 @@ h2{
     color: white;
 }
 /*------------------------------------------------------*/
-
-/*Chương trình thành viên*/
-.imageProgramMember img{
-    width: 102%;
-    height: 100%;
+.imageProgramMember {
     position: relative;
-    top: -300px;
-    left: -10px;
-    filter: blur(2.5px);
+    width: 100%;
+    min-height: 800px; /* Đảm bảo có chiều cao tối thiểu */
+    overflow: hidden; /* Ẩn phần tràn ra ngoài */
 }
-/*Title*/
-.Program{
-    width: 700px;
+
+/* Background image */
+.imageProgramMember > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Giữ tỷ lệ và phủ toàn bộ container */
+    filter: blur(2.5px);
+    z-index: 1;
+}
+
+/* Title */
+.Program {
+    position: absolute;
+    top: 15%; /* Dùng % thay vì px cố định */
+    left: 50%;
+    transform: translateX(-50%); /* Căn giữa hoàn hảo */
     color: white;
-    font-size: 46px;
-    position: relative;
-    top: -1050px;
-    right: -350px;
+    font-size: clamp(24px, 4.5vw, 48px);
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
     text-shadow: 15px 10px 7px rgb(0, 0, 0);
-}
-/*Thẻ chương trình*/
-.ProgramMembers{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-}
-.ProMemCard {
-    position: relative;
-    top: -1070px;
-    right: -85px;
-    border-radius: 5px;
-    margin: 0 30px;
-}
-.ProMemCard img{
-    width: 550px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 28px rgba(255, 255, 0, 0.992);
-}
-.ProMemCard h5{
-    position: relative;
-    top: -30px;
-    color: white;
-    font-size: 30px;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bolder;
-}
-.ProMemCard p{
-    position: relative;
-    top: -70px;
-    color: white;
-    font-size: 14px;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
+    z-index: 1;
+    white-space: nowrap;
+    text-align: center;
+    margin: 0;
 }
 
-.ProMemCard .button{
-    width: 270px;
-    height: 40px;
+/* Container cho các thẻ */
+.ProgramMembers {
+    position: absolute;
+    top: 30%; /* Điều chỉnh lại vị trí để vừa với ảnh lớn hơn */
+    left: 49%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(20px, 10vw, 100px);
+    width: 90%;
+    max-width: 1200px;
+    z-index: 5;
+}
+
+/* Link wrapper */
+.ProgramMembers a {
+    text-decoration: none;
+    flex: 1;
+    max-width: 450px; /* Tăng max-width để chứa ảnh lớn hơn */
+}
+
+/* Thẻ chương trình */
+.ProMemCard {
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Hình ảnh trong thẻ */
+.ProMemCard img {
+    width: 110%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.6);
+    transition: box-shadow 0.3s ease;
+}
+
+.ProMemCard:hover img {
+    box-shadow: 0 0 30px rgba(255, 255, 0, 0.9);
+}
+
+/* Tiêu đề thẻ */
+.ProMemCard h5 {
+    color: white;
+    font-size: clamp(16px, 2.5vw, 24px);
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    margin: 15px 0 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Mô tả */
+.ProMemCard p:not(.button) {
+    color: white;
+    font-size: clamp(11px, 1.4vw, 14px);
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    line-height: 1.4;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    padding: 0 10px;
+}
+
+/* Button */
+.ProMemCard .button {
+    display: inline-block;
+    width: clamp(180px, 20vw, 250px);
+    height: clamp(35px, 4vw, 45px);
     color: black;
     background-color: rgb(253, 253, 17);
     border-radius: 5px;
-    font-size: 17px;
-    font-family: Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: -1px;
+    font-size: clamp(12px, 1.4vw, 16px);
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    cursor: url('../assets/mouse-pointer.png'), auto;
+    text-align: center;
+    line-height: clamp(35px, 4vw, 45px);
+    cursor: pointer;
     position: relative;
-    top: -70px;
     overflow: hidden;
-    z-index: 1;
-    transition: color 0.2s ease;
+    z-index: 15;
+    transition: all 0.3s ease;
+    margin: 0;
+    text-decoration: none;
 }
+
 .ProMemCard .button::before {
     content: '';
     position: absolute;
@@ -962,214 +1113,249 @@ h2{
     transition: left 0.5s ease;
     z-index: -1;
 }
+
 .ProMemCard .button:hover::before {
     left: 0;
 }
+
 .ProMemCard .button:hover {
     color: white;
+    transform: scale(1.05);
 }
+
 
 /*------------------------------------------------------*/
 /*Tất cả giải trí*/
 
-.AllEntertainment{
-    width: 450px;
-    position: relative;
-    top: -900px;
-    font-family: Tahoma;
-    cursor: url('../assets/mouse-pointer.png'), auto;
-}
-.introAllEntertainment{
-    width:638px;
-    color: white;
-    font-family: Tahoma;
-    position: relative;
-    top: -840px;
-    right: -380px;
-}
-.centerLine {
-    display: inline-block;
+.entertainment-section {
     width: 100%;
-    text-align: center; 
+    padding: 150px 0;
+    text-align: center;
+}
+
+.AllEntertainment {
+    color: white;
+    font-size: clamp(24px, 5vw, 45px);
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin: 0 0 30px 0;
+}
+
+.introAllEntertainment {
+    color: white;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(14px, 1.8vw, 18px);
+    margin: 0 auto 50px auto;
+    max-width: 800px;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+.centerLine {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .AllProgramEntertainment {
-    position: relative;
-    top: -800px;
-    right: -85px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 0px;
+    
 }
 
-.AllProgramEntertainment img{
+.AllProgramEntertainment a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.AllProgramEntertainment a:hover {
+    transform: scale(1.05);
+}
+
+.AllProgramEntertainment img {
     margin: 10px;
-    border-radius: 5px;
-    cursor: url('../assets/mouse-pointer.png'), auto;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+.AllProgramEntertainment img:hover {
+    box-shadow: 0px 0px 45px #fefefeb3;
+    transform: translateY(-5px);
+}
+
+        
 /*------------------------------------------------------*/
-/*Liên hệ với chúng tôi*/
-
-.contactUs{
-    width: 420px;
-    color: white;
-    position: relative;
-    top: -500px;
-    right: -130px;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
+.contactUsSection {
+    padding: 5vw 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    gap: 10vw;
 }
-.facebook{
-    width: 400px;
-    height: 90px;
+.contactUs {
+    width: 100%;
+    max-width: 35vw; /* Co giãn theo viewport */
     color: white;
-    background: var(--primary-background);
-    background: var(--primary-background1);
-    position: relative;
-    top: -700px;
-    right: -180px;
-    font-size: 30px;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    border-radius: 5px;
+    font-size: 3vw; /* Font co giãn */
+    text-align: center;
+    margin-bottom: 10vw;
+}
+
+.facebookContact, .zaloContact {
+    display: flex;
+    width: 100%;
+    min-width: 37vw; /* Co giãn theo viewport */
+}
+
+.facebook, .zaloChat {
+    width: 100%;
+    max-width: 28vw; /* Co giãn theo viewport */
+    height: 6vw;
+    color: white;
+    background: var(--primary-background1);
+    font-size: 1.5vw;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border-radius: 0.5vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 1vw 0;
+    text-decoration: none;
     cursor: url('../assets/mouse-pointer.png'), auto;
-    position: relative;
-    
+}
+
+.logoFacebook, .logoZalo {
+    width: 11.5vw; /* Logo co giãn */
+    height: auto;
+    margin-right: 1vw;
 }
 .logoFacebook{
     position: relative;
-    top: -500px;
-    right: -50px;
-    z-index: 5;
-    cursor: url('../assets/mouse-pointer.png'), auto;
-}
-.zaloChat{
-    width: 400px;
-    height: 90px;
-    color: white;
-    background: var(--primary-background);
-    background: var(--primary-background1);
-    position: relative;
-    top: -780px;
-    left: 100px;
-    font-size: 30px;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    cursor: url('../assets/mouse-pointer.png'), auto;
-
+    right: -75px;
+    top: -45px;
 }
 .logoZalo{
     position: relative;
-    top: -600px;
-    right: -380px;
-    z-index: 5;
-    cursor: url('../assets/mouse-pointer.png'), auto;
+    left: -64px;
+    top: -15px;
+}
+.facebook, .zaloChat {
+    margin: 0;
+    font-size: 1.5vw;
 }
 
-.informationContact{
-    width: 600px;
-    height: 800px;
+.informationContact {
+    width: 100%;
+    max-width: 40vw; /* Co giãn theo viewport */
     background-color: rgb(42, 106, 179);
-    position: relative;
-    top: -1400px;
-    right: -690px;
-    border-radius: 5px;
-}
-.informationContact .contact{
-    color: white;
-    font-size: 25px;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    position: relative;
-    top: 15px;
-    left: 45px;
-}
-.informationContact .address,.phone,.email{
-    color: white;
-    font-size: 15px;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    position: relative;
-    top: -10px;
-    left: 70px;
-}
-.informationContact i{
+    padding: 2vw;
+    border-radius: 0.5vw;
+    box-sizing: border-box;
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2vw;
+}
+
+.informationContact .contact {
+    color: white;
+    font-size: 1.8vw;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-bottom: 1.5vw;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    margin: 0.5vw 0;
+}
+
+.addressContact, .phoneContact, .emailContact {
+    display: flex;
+    margin-bottom: 1vw;
+}
+
+.informationContact .address, .phone, .email {
+    color: white;
+    font-size: 1vw;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+.informationContact i {
     color: rgb(218, 222, 10);
-    position: relative;
-    bottom: -22px;
-    left: 45px;
+    margin-right: 1vw;
+    font-size: 1.2vw;
 }
 
-.boxFillInformation .fillName{
-    padding-left: 10px;
-    width: 490px;
-    height: 40px;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 5px;
-    position: relative;
-    bottom: -05px;
-    left: 50px;
-    font-size: 15px;
+.boxFillInformation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxFillInformation .fillName, .fillEmail {
+    width: 100%;
+    max-width: 35vw;
+    height: 3vw;
+    padding-left: 1vw;
+    border: 1px solid white;
+    border-radius: 0.5vw;
+    font-size: 1vw;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1vw 0;
+    box-sizing: border-box;
     cursor: url('../assets/mouse-pointer.png'), auto;
 }
 
-.boxFillInformation .fillEmail{
-    padding-left: 10px;
-    width: 490px;
-    height: 40px;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 5px;
-    position: relative;
-    bottom: -30px;
-    left: 50px;
-    font-size: 15px;
+.boxFillInformation .fillFeedback {
+    width: 100%;
+    max-width: 35vw;
+    height: 18vw;
+    padding: 1vw;
+    border: 1px solid white;
+    border-radius: 0.5vw;
+    font-size: 1vw;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1vw 0;
+    box-sizing: border-box;
     cursor: url('../assets/mouse-pointer.png'), auto;
 }
 
-.boxFillInformation .fillFeedback{
-    padding: 15px 10px;
-    width: 480px;
-    height: 265px;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 5px;
-    position: relative;
-    bottom: -60px;
-    left: 50px;
-    font-size: 15px;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left;
-    text-justify: top;
-    cursor: url('../assets/mouse-pointer.png'), auto;
-}
-
-.boxFillInformation .submit{
+.boxFillInformation .submit {
     z-index: 7;
-    width: 200px;
-    height: 45px;
+    width: 14vw;
+    height: 3.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(0, 0, 0);
+    color: black;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 1.2vw;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
-    background-color:rgb(228, 232, 0);
-    border-radius: 5px;
+    background-color: rgb(228, 232, 0);
+    border-radius: 0.5vw;
     position: relative;
-    bottom: -80px;
-    right: -50px;
     overflow: hidden;
-
+    cursor: url('../assets/mouse-pointer.png'), auto;
 }
-.boxFillInformation .submit::before{
+
+.boxFillInformation .submit::before {
     content: '';
     position: absolute;
     top: 0;
@@ -1181,321 +1367,492 @@ h2{
     transition: left 0.5s ease;
     z-index: -1;
 }
-.boxFillInformation .submit:hover::before{
+
+.boxFillInformation .submit:hover::before {
     left: 0;
 }
 
-.boxFillInformation .submit:hover{
-    cursor: url('../assets/mouse-pointer.png'), auto;
+.boxFillInformation .submit:hover {
     color: white;
 }
+
 
 /*  ------------------------------------------------------*/
 /*Footer*/
-
-.footer{
-    width: 102%;
-    height: 1000px;
-    background: var(--primary-background);
-    background: linear-gradient(90deg, rgb(105, 51, 141) 10%, rgb(58, 103, 200) 100%);
-    position: absolute;
-    bottom: -6600px;
-    left: -10px;
-    
-}
-.ourInformation .logoCineMoon{
-    width: 260px;
-    height: 250px;
-    position: relative;
-    top: 50px;
-    left: 50px;
-}
-
-.ourInformation .slogan{
-    color: white;
-    font-size: 20px;
-    position: relative;
-    top: -65px;
-    left: 80px;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-}
-/*Button*/
-.ourInformation .btnBooking{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(180deg, #fff700);
-    border-radius: 5px;
-    width:180px;
-    height: 45px;
-    font-weight: bold;
-    font-size: 14.5px;
-    font-family:  Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
-    position:absolute;
-    left: 75px;
-    top: 250px;
-    overflow: hidden;
-    transition: color 0.2s ease;
-    z-index: 1;
-    cursor: url('../assets/mouse-pointer.png'), auto;
-
-}
-.ourInformation .btnBooking::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
+.footer {
     width: 100%;
-    height: 100%;
     background: var(--primary-background);
     background: var(--primary-background1);
-    transition: left 0.5s ease;
-    z-index: -1;
+    padding: 5vw 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 50vh;
 }
-.ourInformation .btnBooking:hover::before{
-    left: 0;
+
+.ourInformation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 300vw;
 }
-.ourInformation .btnBooking:hover{
+
+.logoCineMoon {
+    width: 20vw;
+    height: auto;
+    margin-bottom: 2vw;
+}
+
+.slogan {
     color: white;
+    font-size: 1.5vw;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 12vw;
+    position: relative;
+    left: -15vw;
+
 }
 
+.buttonGroup {
+    display: flex;
+    margin-top: 15vw;
+}
 
-.ourInformation .btnPopcorn{
+.buttonWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 35vw;
+}
+
+.ticketIcon, .popcornIcon {
+    width: 2vw;
+    height: auto;
+    position: inherit;
+    left: 2.5vw;
+    z-index: 2;
+}
+
+.btnBooking, .btnPopcorn {
+    width: 12vw;
+    height: 3vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
+    font-size: 1.1vw;
+    font-family: Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: url('../assets/mouse-pointer.png'), auto;
+    z-index: 1;
+}
+
+.btnBooking {
+    background: linear-gradient(180deg, #fff700);
+    transition: color 0.2s ease;
+}
+
+.btnPopcorn {
     color: #fff700;
     border: 1.2px solid #fff700;
-    border-radius: 5px;
-    width:180px;
-    height: 45px;
-    font-weight: bold;
-    font-size: 14.5px;
-    font-family: Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
-    position:absolute;
-    left: 275px;
-    top: 250px;
-    overflow: hidden;
-    z-index: 1;
-    transition: color 0.2 ease;
-    cursor: url('../assets/mouse-pointer.png'), auto;  
+    transition: color 0.2s ease;
 }
-.ourInformation .btnPopcorn::before{
+
+.btnBooking::before, .btnPopcorn::before {
     content: '';
     position: absolute;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, #e09318 30%, #ffcc00);
     transition: left 0.5s ease;
     z-index: -1;
 }
-.ourInformation .btnPopcorn:hover::before{
+
+.btnBooking::before {
+    background: var(--primary-background, #2a6ab3);
+    background: var(--primary-background1);
+}
+
+.btnPopcorn::before {
+    background: linear-gradient(90deg, #e09318 30%, #ffcc00);
+}
+
+.btnBooking:hover::before, .btnPopcorn:hover::before {
     left: 0;
 }
-.ourInformation .btnPopcorn:hover{
-    color: rgb(255, 255, 255);
+
+.btnBooking:hover, .btnPopcorn:hover {
+    color: white;
 }
 
-/*icons*/
-.ourInformation .socialIcons {
+.socialIcons {
     display: flex;
-    gap: 16px; /* khoảng cách giữa các icon */
-    align-items: center;
-  }
-
-.socialIcons i,.iconZalo {
-    font-size: 20px;
-    cursor: url('../assets/mouse-pointer.png'), auto;
-    color: white;
+    gap: 1vw;
+    margin-top: 15vw;
     position: relative;
-    right: -75px;
-    bottom: -20px;
-  }
+    right: -15vw;
+}
 
-.socialIcons i:hover,.iconZalo:hover {
+.socialIcons i, .iconZalo {
+    font-size: 1.5vw;
+    color: white;
+    cursor: url('../assets/mouse-pointer.png'), auto;
+}
+.socialIcons .iconZalo{
+    margin-top: 0.4vw;
+    font-size: 1.7vw;
+}
+.socialIcons i:hover, .iconZalo:hover {
     transform: translateY(-5px);
     transition: transform 0.3s ease;
 }
 
-.ourInformation .language{
-    width: 150px;
-    position: absolute;
-    top: 370px;
-    left: 70px;
-    color: white;
-    font-size: 20px;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.ourInformation .flagVietNam{
-    position: relative;
-    left: 180px;
-    top: 40px;
-}
-.lineFooter{
-    width: 90%;
-    border: 1px solid white;
-    position: relative;
-    top: 330px;
-    right: 0px;
-}
-.footerText{
-    color: white;
-    font-size: 15px;
-    position: relative;
-    top: 350px;
-    left: 70px;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.footerText1{
-    color: white;
-    font-size: 15px;
-    position: relative;
-    top: 315px;
-    left: 900px;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-}
-/*Mở rộng thông tin*/
-.extraInformation{
-    flex-wrap: wrap;
-    width:55%;
-    height: 200px;
-    position: relative;
-    top: -300px;
-    right: -470px;
+.languageGroup {
     display: flex;
     align-items: center;
+    margin-top: 8vw;
+    position: relative;
+    right: -5vw;
+}
+
+.language {
+    color: white;
+    font-size: 1.5vw;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 1vw;
+}
+
+.flagVietNam {
+    width: 3vw;
+    height: auto;
+}
+
+.lineFooter {
+    width: 90%;
+    border: 1px solid white;
+    margin: 2vw 0;
+}
+
+.footerTextGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.footerText, .footerText1 {
+    color: white;
+    font-size: 1vw;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0.5vw 0;
+    text-align: center;
+}
+
+.extraInformation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    width: 80%;
     justify-content: center;
 }
-/*Tên các thông mở rộng*/
-.extraInformation .nameInfor1,.nameInfor2,.nameInfor3,
-.nameInfor4,.nameInfor5,.nameInfor6{
+
+.infoBlock {
+    flex: 1 1 15vw;
+    min-width: 15vw;
+    margin-bottom: 2vw;
+}
+
+.nameInfor1, .nameInfor2, .nameInfor3, .nameInfor4, .nameInfor5, .nameInfor6 {
     color: white;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
+    margin-bottom: 1vw;
 }
-/*Chi tiết các thông tin*/
-.extraInformation .detailsInfor1,
-.detailsInfor2,.detailsInfor3,.detailsInfor4,
-.detailsInfor5,.detailsInfor6{
+
+.detailsInfor1, .detailsInfor2, .detailsInfor3, .detailsInfor4, .detailsInfor5, .detailsInfor6 {
     color: white;
-    font-size: 15px;
+    font-size: 1vw;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
-.detailsInfor1 p:hover,.detailsInfor2 p:hover,
-.detailsInfor3 p:hover,.detailsInfor4 p:hover,
-.detailsInfor5 p:hover,.detailsInfor6 p:hover{
+
+.detailsInfor1 p:hover, .detailsInfor2 p:hover, .detailsInfor3 p:hover, 
+.detailsInfor4 p:hover, .detailsInfor5 p:hover, .detailsInfor6 p:hover {
     color: rgb(242, 255, 0);
-    font-size: 15px;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/*Vị trí các thông tin*/
-.extraInformation .nameInfor1{
-    position: relative;
-    top: -105px;
-}
-.extraInformation .detailsInfor1{
-    position: relative;
-    top: -20px;
-    left: -90px;
-}
-.extraInformation .nameInfor2{
-    position: relative;
-    top: -105px;
-}
-.extraInformation .detailsInfor2{
-    position: relative;
-    top: -20px;
-    left: -110px;
-}
-.extraInformation .nameInfor3{
-    position: relative;
-    top: -105px;
-}
-.extraInformation .detailsInfor3{
-    position: relative;
-    top: -20px;
-    left: -90px;
-}
-.extraInformation .nameInfor4{
-    position: relative;
-    top: 95px;
-    left: -620px;
-}
-.extraInformation .detailsInfor4{
-    position: relative;
-    top: -70px;
-    left: 5px;
-}
-.extraInformation .nameInfor5{
-    position: relative;
-    top: -135px;
-    left: 110px;
-}
-.extraInformation .detailsInfor5{
-    position: relative;
-    top: 15px;
-    left: 5px;
-}
-.extraInformation .nameInfor6{
-    position: relative;
-    top: -338px;
-    left: 270px;
-}
-.extraInformation .detailsInfor6{
-    position: relative;
-    top: -135px;
-    left: 120px;
-}
 
-/*Mobile*/
-@media screen and (max-width: 767px)  {
-    #search{
-        display: none;
-    }
-    .search-container i{
-        padding: 5px;
-        border-radius: 50%;
-        border: 2px solid rgb(255, 255, 255);
-        color: white;
-    }
+
+
+
+
+
+
+
+/* Desktop < 1199px */
+@media screen and (max-width: 1199px) {
+  #search {
+    display: none;
+  }
+  .username {
+    display: none;
+  }
+  .intro-right i {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid white;
+    color: white;
+  }
+  .toolBar .leftItems,
+  .toolBar .rightItems {
+    gap: 10px;
+    font-size: small;
+  }
 
 }
-/*Tablet*/
-@media screen and (min-width: 768px) and (max-width: 1023px)  {
-    #search{
-        display: none;
+
+/* Tablet < 1024px */
+@media screen and (max-width: 1023px) {
+  .user-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../assets/user-icon.png') center center no-repeat;
+    background-size: contain;
+  }
+  .username {
+    display: none;
+  }
+  .intro {
+    gap: 15px;
+  }
+
+  .intro-right {
+    gap: 10px;
+  }
+
+  #search {
+    width: 180px;
+  }
+  #prevDiscountsBtn,
+  #nextDiscountsBtn {
+    display: none;
+  }
+  .button #prevButn,
+  .button #nextButn {
+    display: none;
+  }
+  #prevBtn2,
+  #nextBtn2 {
+    display: none;
+  } 
+  .newsHot #prevBtn,
+  .newsHot #nextBtn {
+    display: none;
+  } 
+}
+
+/* Mobile < 768px */
+@media screen and (max-width: 767px) {
+  .toolBar {
+    display: none;
+  }
+
+  .username {
+    display: none;
+  }
+  .intro {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+    padding: 1vh 2vw;
+  }
+    .intro-left,
+  .intro-center,
+  .intro-right {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .search-container,
+  .flags {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+    .action-buttons {
+    flex-direction: column;
+    gap: 6px;
+  }
+  #search {
+    width: 150px;
+  }
+  .imageProgramMember {
+        min-height: 500px;
     }
-    .search-container i{
-        padding: 5px;
-        border-radius: 50%;
-        border: 2px solid rgb(255, 255, 255);
-        color: white;
+    
+    .Program {
+        top: 10%;
+        font-size: clamp(20px, 5vw, 36px);
     }
-    .intro p{
-        display: none;
+    
+    .ProgramMembers {
+        top: 25%;
+        flex-direction: column;
+        gap: clamp(15px, 3vw, 25px);
+        width: 95%;
+    }
+    
+    .ProgramMembers a {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .ProMemCard h5 {
+        font-size: clamp(14px, 3vw, 20px);
+    }
+    
+    .ProMemCard p:not(.button) {
+        font-size: clamp(10px, 2vw, 12px);
+    }
+    
+    .ProMemCard .button {
+        width: clamp(150px, 25vw, 200px);
+        height: clamp(32px, 5vw, 40px);
+        line-height: clamp(32px, 5vw, 40px);
+        font-size: clamp(11px, 2vw, 14px);
+    }
+    .contactUs {
+        font-size: 3vw;
+        max-width: 90%;
     }
 
-}
-/*Desktop*/
-@media screen and (min-width: 1024px) and (max-width: 1199px)  {
-    #search{
-        display: none;
+    .socialLink {
+        max-width: 80%;
+        height: 8vw;
+        font-size: 2.5vw;
     }
-    .search-container i{
-        padding: 5px;
-        border-radius: 50%;
-        border: 2px solid rgb(255, 255, 255);
-        color: white;
+
+    .logoFacebook, .logoZalo {
+        width: 5vw;
+    }
+
+    .facebook, .zaloChat {
+        font-size: 2.5vw;
+    }
+
+    .informationContact {
+        max-width: 90%;
+        padding: 3vw;
+    }
+
+    .informationContact .contact {
+        font-size: 2.5vw;
+    }
+
+    .informationContact .address, .phone, .email {
+        font-size: 1.8vw;
+    }
+
+    .informationContact i {
+        font-size: 2vw;
+    }
+
+    .boxFillInformation .fillName, .fillEmail {
+        max-width: 80%;
+        height: 5vw;
+        font-size: 1.8vw;
+    }
+
+    .boxFillInformation .fillFeedback {
+        max-width: 80%;
+        height: 25vw;
+        font-size: 1.8vw;
+    }
+
+    .boxFillInformation .submit {
+        width: 20vw;
+        height: 5vw;
+        font-size: 2vw;
+    }
+    .footer {
+        padding: 8vw 4vw;
+    }
+
+    .ourInformation {
+        max-width: 80%;
+    }
+
+    .logoCineMoon {
+        width: 30vw;
+    }
+
+    .slogan, .language {
+        font-size: 2.5vw;
+    }
+
+    .ticketIcon, .popcornIcon {
+        width: 3vw;
+    }
+
+    .btnBooking, .btnPopcorn {
+        width: 20vw;
+        height: 5vw;
+        font-size: 1.8vw;
+    }
+
+    .socialIcons i, .iconZalo {
+        font-size: 2.5vw;
+    }
+
+    .flagVietNam {
+        width: 5vw;
+    }
+
+    .footerText, .footerText1 {
+        font-size: 1.8vw;
+    }
+
+    .nameInfor1, .nameInfor2, .nameInfor3, .nameInfor4, .nameInfor5, .nameInfor6 {
+        font-size: 2.5vw;
+    }
+
+    .detailsInfor1, .detailsInfor2, .detailsInfor3, .detailsInfor4, .detailsInfor5, .detailsInfor6 {
+        font-size: 1.8vw;
+    }
+
+    .infoBlock {
+        flex: 1 1 30vw;
+        min-width: 30vw;
     }
 }
-@media screen and (min-width: 1200px) {
-    #search{
-        display: block;
-    }
+
+
+/* Optional smoother spacing for all breakpoints */
+@media screen and (max-width: 1440px) {
+  .toolbar-container {
+    padding: 0 2vw; /* thu hẹp padding */
+  }
+  .intro{
+    padding: 1vh 2vw; /* giảm padding */
+  }
+  .toolBar .leftItems,
+  .toolBar .rightItems {
+    gap: clamp(2px, 0.1vw, 20px);
+    padding: 0 0;
+
+  }
+  .toolBar{
+    gap: clamp(2px, 0.1vw, 20px);
+  }
 }
+

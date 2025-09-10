@@ -1,82 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Final Project</title>
 </head>
 <body>
-  <a href="#card"><p>Trailer</p></a>
-  <div id="card">
-    <iframe width="560" height="315" 
-    src="https://www.youtube.com/embed/WBE7iNSkA10?si=lVItYPJX1v7wpVfq" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    referrerpolicy="strict-origin-when-cross-origin" 
-    allowfullscreen></iframe>
-  </div>
-
-<style>
-
-#card{
-  display: none;
-  justify-content: center;
-  align-items: end;
-}
-p:focus{
-  display: flex;
-}
-
-.movie-card {
-  position: relative;
-  width: 270px;
-  height: 400px;
-  overflow: hidden;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.movie-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* Box overlay mờ mờ */
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  opacity: 0;
-  transition: opacity 0.4s ease-in-out;
-  display: flex;
-  align-items: flex-end; /* text nằm dưới */
-  padding: 20px;
-}
-
-.text {
-  color: white;
-  transform: translateY(20px);
-  opacity: 0;
-  transition: transform 0.4s ease, opacity 0.4s ease;
-}
-
-/* Khi hover: hiện overlay + trượt text lên */
-.movie-card:hover .overlay {
-  opacity: 1;
-}
-
-.movie-card:hover .text {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-
-</style>
+    <main><h1>僕の一日</h1></main>
+    <div>
+        <p>今日はいい日だ。僕は七時間に起きました。、顔を洗ったの後で、朝ご飯を食べて、ゲームをして、勉強しました。</p>
+        <p>僕の昼ご飯がたくさん料理があった。含んだ</p>
+            <ul>
+                <li>卵</li>
+                <li>魚と肉</li>
+                <li>野菜</li>
+            </ul>
+        <p>午前、一時らか二時まで寝ました。それから、楽しい映画を見った。この映画を見たければこれはリンクだ。</p>
+        <a href="https://www.youtube.com/watch?v=Ou3DtTyil8c&t=4147s" title="映画を見た" target="_blank">ベトナムの楽しい映画</a>
+        <p>さらに、僕は漫画も好きだ。これは僕の一番好きな漫画だ。</p>
+        <ol>
+            <li>
+                <div class="comics">
+                    <a href="https://www.toptruyentv7.pro/truyen-tranh/grand-blue-co-gai-thich-lan/10368" title="読んだ" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/vi/e/e4/Grand_Blue_volume_1_cover.jpg" alt="グランブルーの写真" width="10%">
+                    </a>
+                    <div class="title">グランブルー</div>
+                </div>
+                
+            </li>
+            <li>
+                <div class="comics">
+                    <a href="https://www.toptruyentv7.pro/truyen-tranh/tenpuru/1453" title="読んだ" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/b/b1/TenPuru_vol_1.png" alt="テンプルの写真" width="10%">
+                    </a>
+                    <div class="title">てんぷる</div>
+                </div>
+            </li>
+            <li>
+                <div class="comics">
+                    <a href="https://www.toptruyentv7.pro/truyen-tranh/tao-muon-tro-thanh-chua-te-bong-toi-/1907" title="読んだ" target="_blank">
+                        <img src="https://i0.wp.com/s2.anhvip.xyz/comics/tao-muon-tro-thanh-chua-te-bong-toi-.jpg" alt="影の実力者になりたくての写真" width="10%">
+                    </a>
+                    <div class="title">影の実力者になりたくて</div>
+                </div>
+            </li>
+        </ol>
+        <p>読んでいただきありがとうございます</p>
+    </div>
+    
 </body>
 </html>

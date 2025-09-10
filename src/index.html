@@ -3,73 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
     <title>  CineMoon - Hệ thống rạp chiếu phim hiện đại, giá rẻ bậc nhất toàn cầu</title>
     <link rel="icon" type="image/png" href="../assets/header-logo-web.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div id="boxToolBar">
-        <div class="intro">
-            <a href="../src/index.html"><img src="../assets/header-logo.png" width="20px" height="auto" alt="logoCineMoon" class="logoCineMoon"></a>
-            
-            <img src="../assets/ticket.png" width="25px;" style=" z-index: 10;position: absolute; right: -435px; bottom: -50px;">
-            <a href="./bookTicket.html"><button class="btnBooking"> ĐẶT VÉ NGAY</button></a>
-            <img src="../assets/popcorn.png" width="35px;" style=" z-index: 10;position: absolute; right: -575px; bottom: -55px;">
-            <a href="./bookPopcorn.html"><button class="btnPopcorn">ĐẶT BẮP NƯỚC</button></a>
-            <div class="search-container">
-                <input type="search" placeholder="Tìm phim, rạp..." id="search">
-                <i class="fa-solid fa-magnifying-glass" ></i>
+        <div class="toolbar-container">
+            <div class="intro">
+                <div class="intro-left">
+                    <a href="../src/index.html">
+                        <img src="../assets/header-logo.png" height="auto" alt="logoCineMoon" class="logoCineMoon">
+                    </a>
+                </div>
+
+                <div class="intro-center">
+                    <div class="action-buttons">
+                        <a href="./bookTicket.html">
+                            <button class="btnBooking">
+                                <img src="../assets/ticket.png" width="25px;" >
+                                ĐẶT VÉ NGAY
+                            </button>
+                        </a>
+                        
+                        <a href="./bookPopcorn.html">
+                            <button class="btnPopcorn">
+                                <img src="../assets/popcorn.png" width="35px;" >
+                                ĐẶT BẮP NƯỚC
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="intro-right">
+                    <div class="search-container">
+                        <input type="search" placeholder="Tìm phim, rạp..." id="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <p class="username">VÕ GIA HUY</p>   
+                    <img src="../assets/flagVietnam.png" width="44vw" alt="flagVietNam" class="flagVietNam">
+                </div>
             </div>
             
-            <p class="username">VÕ GIA HUY</p>   
-            <img src="../assets/flagVietnam.png" width="40px" alt="flagVietNam" class="flagVietNam">
-            <img src="../assets/flagamerica.png" width="30px" alt="flagAmerica" class="flagAmerica">
-        </div>
-        
-        <hr class="lineToolbar">
-        <div class="toolBar">
-            <div class="leftItems">
-                <a href="#selectTheater"><h3 class="toolLeft">Chọn rạp</h3></a>
-                <a href="#showTimes"><h3 class="toolLeft">Lịch chiếu</h3></a>
-            </div> 
-            <div class="rightItems">  
-                <a href="./discount.html"><h3>Khuyến mãi</h3></a>
-                <a href="#eventRetals"><h3>Thuê sự kiện</h3></a>
-                <a href="#entertainmentOptions"><h3>Tất cả các giải trí</h3></a>
-                <a href="#aboutUs"><h3>Giới thiệu</h3></a>
-            </div>     
+            <hr class="lineToolbar">
+            <div class="toolBar">
+                <div class="leftItems">
+                    <a href="#selectTheater"><h3 class="toolLeft">Chọn rạp</h3></a>
+                    <a href="#showTimes"><h3 class="toolLeft">Lịch chiếu</h3></a>
+                </div> 
+                <div class="rightItems">  
+                    <a href="./discount.html"><h3>Khuyến mãi</h3></a>
+                    <a href="#eventRetals"><h3>Thuê sự kiện</h3></a>
+                    <a href="#entertainmentOptions"><h3>Tất cả các giải trí</h3></a>
+                    <a href="#aboutUs"><h3>Giới thiệu</h3></a>
+                </div>     
+            </div>
         </div>
     </div>
 
     <div class="newsHot">
-    <p id="prevBtn">⟨</p>
-        <div class="sliderWrapper" id="sliderWrapper">
-            <div class="movieItem">
-                <img src="../assets/muonruoudaykeo.png" alt="muonruoudaykeo">
-                <button class="btnBooking">ĐẶT VÉ NGAY</button>
-            </div>
+        <p id="prevBtn">⟨</p>
+            <div class="sliderWrapper" id="sliderWrapper">
+                <div class="movieItem">
+                    <img src="../assets/BANNER-WEB.png" alt="banner-web">
+                    <button class="btnBooking">ĐẶT VÉ NGAY</button>
+                </div>
 
-            <div class="movieItem">
-                <img src="../assets/nhiemvubatkhathi.png" alt="Nhiệm vụ bất khả thi">
-                <button class="btnBooking">ĐẶT VÉ NGAY</button>
-            </div>
+                <div class="movieItem">
+                    <img src="../assets/nhiemvubatkhathi.png" alt="Nhiệm vụ bất khả thi">
+                    <button class="btnBooking">ĐẶT VÉ NGAY</button>
+                </div>
 
-            <div class="movieItem">
-                <img src="../assets/bikipluyenrong.png" alt="Bí kíp luyện rồng">
-                <button class="btnBooking">ĐẶT VÉ NGAY</button>
+                <div class="movieItem">
+                    <img src="../assets/bikipluyenrong.png" alt="Bí kíp luyện rồng">
+                    <button class="btnBooking">ĐẶT VÉ NGAY</button>
+                </div>
             </div>
-        </div>
-    <p id="nextBtn">⟩</p>
-</div>
+        <p id="nextBtn">⟩</p>
+    </div>
 
 
     <div class="toolbarBooking">
         <p class="booking">ĐẶT VÉ NHANH</p>
 
             <div class="choice">
-                    <p>1.Chọn Rạp</p>
-                    <span>^</span>
+                <p>1.Chọn Rạp</p>
+                <span>^</span>
             </div>
 
             <div class="choice">
@@ -91,7 +111,10 @@
     </div>
 
     <h2>PHIM ĐANG CHIẾU</h2>
-    <div id="prevButn">⟨</div>
+    <div class="button">
+        <div id="prevButn">⟨</div>
+        <div id="nextButn">⟩</div>
+    </div>
     <div class="nowShowing" id="Wrapper">
         <div class="movieItem">
             <div class="movieBox">
@@ -254,7 +277,7 @@
             </div>
         </div>
     </div>
-    <p id="nextButn">⟩</p>
+    
 
 
     
@@ -446,74 +469,96 @@
     
 <!--Khuyến mãi-->
     <h2 class="titleDiscounts">KHUYẾN MÃI</h2>
-    <p id="prevDiscountsBtn">⟨</p>
-    <div class="discounts" id="discountsWrapper">
-        <a href="./discount.html"><img src="../assets/c_student.png" alt="discount-student"></a>
-        <a href="./discount.html"><img src="../assets/C_TEN.png" alt="discount-student"></a>
-        <a href="./discount.html"><img src="../assets/C_MEMBER.png" alt="discount-member"></a>
+    <div class="wrapper">
+        <p id="prevDiscountsBtn">⟨</p>
+        <div class="discounts" id="discountsWrapper">
+            <a href="./discount.html"><img src="../assets/c_student.png" alt="discount-student"></a>
+            <a href="./discount.html"><img src="../assets/C_TEN.png" alt="discount-student"></a>
+            <a href="./discount.html"><img src="../assets/C_MEMBER.png" alt="discount-member"></a>
         <a href="./discount.html"><img src="../assets/monday_1_.png" alt="discount-date"></a>
+        </div>
+        <p id="nextDiscountsBtn">⟩</p>
+        <a href="./discount.html">
+            <div class="buttonAllDiscounts">TẤT CẢ ƯU ĐÃI</div>
+        </a>
     </div>
-    <p id="nextDiscountsBtn">⟩</p>
-    <a href="./discount.html"><div class="buttonAllDiscounts">TẤT CẢ ƯU ĐÃI</div></a>
+    
 
 <!--Chương trình thành viên-->
     <div class="imageProgramMember">
         <img src="../assets/chuongtrinhthanhvienbackground.png" alt="chuongtrinhthanhvienbackground">
-    </div>
-    <h5 class="Program">CHƯƠNG TRÌNH THÀNH VIÊN</h5>
-    <div class="ProgramMembers">
-        <a href="./membership.html">
-            <div class="ProMemCard">
-                <img src="../assets/ProgramCMember.png" alt="ProgramCMember">
-                <h5>THÀNH VIÊN C'FRIEND</h5>
-                <p>Thẻ C'Friend nhiều ưu đãi cho thành viên mới</p>
-                <p class="button">TÌM HIỂU NGAY</p>
-            </div>
-        </a>
-        <a href="./membership.html">
-            <div class="ProMemCard">
-                <img src="../assets/ProgramCVip.png" alt="ProgramCVip">
-                <h5>THÀNH VIÊN C'VIP</h5>
-                <p>Thẻ VIP CineStar mang đến nhiều ưu đãi độc quyền</p>
-                <p class="button">TÌM HIỂU NGAY</p>
-            </div>
-        </a>
+        
+        <h5 class="Program">CHƯƠNG TRÌNH THÀNH VIÊN</h5>
+        
+        <div class="ProgramMembers">
+            <a href="./membership.html">
+                <div class="ProMemCard">
+                    <img src="../assets/ProgramCMember.png" alt="ProgramCMember">
+                    <h5>THÀNH VIÊN C'FRIEND</h5>
+                    <p>Thẻ C'Friend nhiều ưu đãi cho thành viên mới</p>
+                    <p class="button">TÌM HIỂU NGAY</p>
+                </div>
+            </a>
+            
+            <a href="./membership.html">
+                <div class="ProMemCard">
+                    <img src="../assets/ProgramCVip.png" alt="ProgramCVip">
+                    <h5>THÀNH VIÊN C'VIP</h5>
+                    <p>Thẻ VIP CineStar mang đến nhiều ưu đãi độc quyền</p>
+                    <p class="button">TÌM HIỂU NGAY</p>
+                </div>
+            </a>
+        </div>
     </div>
 
 <!--Tất cả chương trình giải trí-->
-    <h2 class="AllEntertainment">TẤT CẢ CÁC GIẢI TRÍ</h2>
-    <p class="introAllEntertainment">Ngoài hệ thống rạp chiếu phim chất lượng cao, Cinestar còn cung cấp cho bạn nhiều loại
-         <span class="centerLine">hình giải trí tuyệt vời khác.</span>
-    </p>
-    <div class="AllProgramEntertainment">
-        <a href=""><img src="../assets/entertainmentKid.png" alt="entertainmentKid"></a>
-        <a href=""><img src="../assets/entertainmentBowlling.png" alt="entertainmentBowlling"></a>
-        <a href=""><img src="../assets/entertainmentBilliards.png" alt="entertainmentBilliards"></a>
-        <a href=""><img src="../assets/entertainmentFoods.png" alt="entertainmentFoods"></a>
-        <a href=""><img src="../assets/entertainmentGym.png" alt="entertainmentGym"></a>
-        <a href=""><img src="../assets/entertainmentOpera.png" alt="entertainmentOpera"></a>
+    <div class="entertainment-section">
+        <h2 class="AllEntertainment">TẤT CẢ CÁC GIẢI TRÍ</h2>
+        <p class="introAllEntertainment">Ngoài hệ thống rạp chiếu phim chất lượng cao, Cinestar còn cung cấp cho bạn nhiều loại
+            <span class="centerLine">hình giải trí tuyệt vời khác.</span>
+        </p>
+        <div class="AllProgramEntertainment">
+            <a href=""><img src="../assets/entertainmentKid.png" alt="entertainmentKid"></a>
+            <a href=""><img src="../assets/entertainmentBowlling.png" alt="entertainmentBowlling"></a>
+            <a href=""><img src="../assets/entertainmentBilliards.png" alt="entertainmentBilliards"></a>
+            <a href=""><img src="../assets/entertainmentFoods.png" alt="entertainmentFoods"></a>
+            <a href=""><img src="../assets/entertainmentGym.png" alt="entertainmentGym"></a>
+            <a href=""><img src="../assets/entertainmentOpera.png" alt="entertainmentOpera"></a>
+        </div>
     </div>
 
-
 <!--Liên hệ với chúng tôi-->
-    <h2 class="contactUs">LIÊN HỆ VỚI CHÚNG TÔI</h2>
-    <a href="https://www.facebook.com/cinestarcinemasvietnam" target="_blank">
-        <img src="../assets/logoFacebook.png" alt="logoFacebook" class="logoFacebook">
-        <p class="facebook">FACEBOOK</p>
-    </a>
-    <a href="https://zalo.me/2861828859391058401" target="_blank">
-        <img src="../assets/logoZalo.png" alt="logoZalo" class="logoZalo">
-        <p class="zaloChat">ZALO CHAT</p>
-    </a>
+<div class="contactUsSection">
+    <div class="introContact">
+        <h2 class="contactUs">LIÊN HỆ VỚI CHÚNG TÔI</h2>
+        <div class="facebookContact">
+            <a href="https://www.facebook.com/cinestarcinemasvietnam" target="_blank">
+                <img src="../assets/logoFacebook.png" alt="logoFacebook" class="logoFacebook">
+            </a>
+            <p class="facebook">FACEBOOK</p>
+        </div>
+        <div class="zaloContact">
+            <p class="zaloChat">ZALO CHAT</p>
+            <a href="https://zalo.me/2861828859391058401" target="_blank">
+                <img src="../assets/logoZalo.png" alt="logoZalo" class="logoZalo">
+            </a>
+        </div>
+    </div>
     <div class="informationContact">
         <p class="contact">THÔNG TIN LIÊN HỆ</p>
-        <i class="fa-solid fa-location-dot"></i>
-        <p class="address">Địa chỉ: 123 Đường ABC, Quận 1, TP.HCM</p>
-        <i class="fa-solid fa-phone"></i>
-        <p class="phone">Điện thoại: 0123-456-789</p>
-        <i class="fa-solid fa-envelope"></i>
-        <p class="email">Email: abcxyz@gmaill.com
-        
+        <div class="addressContact">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="address">Địa chỉ: 123 Đường ABC, Quận 1, TP.HCM</p>
+        </div>
+        <div class="phoneContact">
+            <i class="fa-solid fa-phone"></i>
+            <p class="phone">Điện thoại: 0123-456-789</p>
+        </div>
+        <div class="emailContact">
+            <i class="fa-solid fa-envelope"></i>
+            <p class="email">Email: abcxyz@gmail.com</p>
+        </div>
+
         <div class="boxFillInformation">
             <input type="text" placeholder="Họ và tên" class="fillName">
             <input type="text" placeholder="Điền email" class="fillEmail">
@@ -521,83 +566,104 @@
             <p class="submit">GỬI NGAY</p>
         </div>
     </div>
+</div>
 <!--Footer-->
     <div class="footer">    
         <div class="ourInformation">
             <img src="../assets/header-logo.png" width="260px" height="250px" alt="logoCineMoon" class="logoCineMoon">
             <p class="slogan">BE HAPPY, BE A MOON</p>
-            <img src="../assets/ticket.png" width="25px;" style=" z-index: 10;position: absolute; right: -435px; bottom: -50px;">
-            <p class="btnBooking"> ĐẶT VÉ</p>
-            <img src="../assets/popcorn.png" width="35px;" style=" z-index: 10;position: absolute; right: -575px; bottom: -55px;">
-            <p class="btnPopcorn">ĐẶT BẮP NƯỚC</p>
+
+            <div class="buttonGroup">
+                <div class="buttonWrapper">
+                    <img src="../assets/ticket.png" alt="ticket" class="ticketIcon">
+                    <p class="btnBooking">ĐẶT VÉ</p>
+                </div>
+                <div class="buttonWrapper">
+                    <img src="../assets/popcorn.png" alt="popcorn" class="popcornIcon">
+                    <p class="btnPopcorn">ĐẶT BẮP NƯỚC</p>
+                </div>
+            </div>
+
             <div class="socialIcons">
                 <a href="https://www.facebook.com/cinestarcinemasvietnam" target="_blank"><i class="fab fa-facebook" ></i></a>
                 <a href="https://www.youtube.com/@CinestarCinemasVietnam" target="_blank"><i class="fab fa-youtube"></i></a>
                 <a href="https://www.tiktok.com/@cinestarvietnam" target="_blank"><i class="fab fa-tiktok"></i></a>
                 <a href="https://zalo.me/2861828859391058401" target="_blank"><img src="../assets/iconZalo.png" width="17px;" alt="iconZalo" class="iconZalo"></a>
             </div>
-            <p class="language">Ngôn ngữ:</p>
-            <img src="../assets/flagVietnam.png" width="40px" alt="flagVietNam" class="flagVietNam"> 
+
+            <div class="languageGroup">
+                <p class="language">Ngôn ngữ:</p>
+                <img src="../assets/flagVietnam.png" alt="flagVietNam" class="flagVietNam"> 
+            </div>
+        </div>
+        
+        <div class="extraInformation">
+            <div class="infoBlock">
+                <p class="nameInfor1">TÀI KHOẢN</p>
+                <div class="detailsInfor1">
+                    <p>Đăng nhập</p>
+                    <p>Đăng kí</p>
+                    <p>Membership</p>
+                </div>
+            </div>
+            <div class="infoBlock">
+                <p class="nameInfor2">XEM PHIM</p>
+                <div class="detailsInfor2">
+                    <p>Phim đang chiếu</p>
+                    <p>Phim sắp chiếu</p>
+                    <p>Suất chiếu đặc biệt</p>
+                </div>
+            </div>
+            <div class="infoBlock">
+                <p class="nameInfor3">CINEMOON</p>
+                <div class="detailsInfor3">
+                    <p>Giới thiệu</p>
+                    <p>Liên hệ</p>
+                    <p>Tuyển dụng</p>
+                </div>
+            </div>
+            <div class="infoBlock">
+                <p class="nameInfor4">THUÊ SỰ KIỆN</p>
+                <div class="detailsInfor4">
+                    <p>Thuê rạp</p>
+                    <p>Các loại hình thuê khác</p>
+                </div>
+            </div>
+            <div class="infoBlock">
+                <p class="nameInfor5">DỊCH VỤ KHÁC</p>
+                <div class="detailsInfor5">
+                    <p>Nhà hàng</p>
+                    <p>Kidzone</p>
+                    <p>Bowling</p>
+                    <p>Billiards</p>
+                    <p>Gym</p>
+                    <p>Nhà hát Opera</p>
+                    <p>Coffee</p>
+                </div>
+            </div>
+            <div class="infoBlock">
+                <p class="nameInfor6">HỆ THỐNG RẠP</p>
+                <div class="detailsInfor6">
+                    <p>Tất cả hệ thống rạp</p>
+                    <p>CineMoon Quốc Thanh (TP.HCM)</p>
+                    <p>CineMoon Q.6 (TP.HCM)</p>
+                    <p>CineMoon Bà Trưng (TP.HCM)</p>
+                    <p>CineMoon Huế (Huế)</p>
+                    <p>CineMoon Đà Nẵng (Đà Nẵng)</p>
+                    <p>CineMoon Mặt Trăng (Mặt Trăng)</p>
+                    <p>CineMoon Sao Hỏa (Sao Hỏa)</p>
+                    <p>CineMoon Mặt Trời (Mặt Trời)</p>
+                    <p>CineMoon Sao Kim (Sao Kim)</p>
+                </div>
+            </div>
         </div>
         <hr class="lineFooter">
-        <p class="footerText">© 2025 CineMoon. Công ty một thành viên CineMoon.</p>
-        <p class="footerText1">Chính sách bảo mật | Điều khoản sử dụng | Chính sách cookie</p>
-
-        <div class="extraInformation">
-            <p class="nameInfor1">TÀI KHOẢN</p>
-            <div class="detailsInfor1">
-                <p>Đăng nhập</p>
-                <p>Đăng kí</p>
-                <p>Membership</p>
-            </div>
-
-            <p class="nameInfor2">XEM PHIM</p>
-            <div class="detailsInfor2">
-                <p>Phim đang chiếu</p>
-                <p>Phim sắp chiếu</p>
-                <p>Suất chiếu đặc biệt</p>
-            </div>
-
-            <p class="nameInfor3">CINEMOON</p>
-            <div class="detailsInfor3">
-                <p>Giới thiệu</p>
-                <p>Liên hệ</p>
-                <p>Tuyển dụng</p>
-            </div>
-
-            <p class="nameInfor4">THUÊ SỰ KIỆN</p>
-            <div class="detailsInfor4">
-                <p>Thuê rạp</p>
-                <p>Các loại hình thuê khác</p>
-            </div>
-
-            <p class="nameInfor5">DỊCH VỤ KHÁC</p>
-            <div class="detailsInfor5">
-                <p>Nhà hàng</p>
-                <p>Kidzone</p>
-                <p>Bowling</p>
-                <p>Billiards</p>
-                <p>Gym</p>
-                <p>Nhà hát Opera</p>
-                <p>Coffee</p>
-            </div>
-
-            <p class="nameInfor6">HỆ THỐNG RẠP</p>
-            <div class="detailsInfor6">
-                <p>Tất cả hệ thống rạp</p>
-                <p>CineMoon Quốc Thanh (TP.HCM)</p>
-                <p>CineMoon Q.6 (TP.HCM)</p>
-                <p>CineMoon Bà Trưng (TP.HCM)</p>
-                <p>CineMoon Huế (Huế)</p>
-                <p>CineMoon Đà Nẵng (Đà Nẵng)</p>
-                <p>CineMoon Mặt Trăng (Mặt Trăng)</p>
-                <p>CineMoon Sao Hỏa (Sao Hỏa)</p>
-                <p>CineMoon Mặt Trời (Mặt Trời)</p>
-                <p>CineMoon Sao Kim (Sao Kim)</p>
-            </div>
+        <div class="footerTextGroup">
+            <p class="footerText">© 2025 CineMoon. Công ty một thành viên CineMoon.</p>
+            <p class="footerText1">Chính sách bảo mật | Điều khoản sử dụng | Chính sách cookie</p>
         </div>
     </div>
-    <!--Liên kết với script-->
+    <!--Liên kết với javascript-->
     <script src="script.js"></script>
 </body>
 </html>

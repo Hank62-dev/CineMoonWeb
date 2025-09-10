@@ -11,29 +11,55 @@
 <body>
 
     <div id="boxToolBar">
-        <div class="intro">
-            <img src="../assets/ticket.png" width="25px;" style=" z-index: 10;position: absolute; right: -435px; bottom: -50px;">
-            <a href="./bookTicket.html"><button class="btnBooking"> ĐẶT VÉ NGAY</button></a>
-            <img src="../assets/popcorn.png" width="35px;" style=" z-index: 10;position: absolute; right: -575px; bottom: -55px;">
-            <a href="./bookPopcorn.html"><button class="btnPopcorn">ĐẶT BẮP NƯỚC</button></a>
-            <div class="search-container">
-                <input type="search" placeholder="Tìm phim, rạp..." id="search">
-                <i class="fa-solid fa-magnifying-glass" ></i>
+        <div class="toolbar-container">
+            <div class="intro">
+                <div class="intro-left">
+                    <a href="../src/index.html">
+                        <img src="../assets/header-logo.png" height="auto" alt="logoCineMoon" class="logoCineMoon">
+                    </a>
+                </div>
+
+                <div class="intro-center">
+                    <div class="action-buttons">
+                        <a href="./bookTicket.html">
+                            <button class="btnBooking">
+                                <img src="../assets/ticket.png" width="25px;" >
+                                ĐẶT VÉ NGAY
+                            </button>
+                        </a>
+                        
+                        <a href="./bookPopcorn.html">
+                            <button class="btnPopcorn">
+                                <img src="../assets/popcorn.png" width="35px;" >
+                                ĐẶT BẮP NƯỚC
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="intro-right">
+                    <div class="search-container">
+                        <input type="search" placeholder="Tìm phim, rạp..." id="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <p class="username">VÕ GIA HUY</p>   
+                    <img src="../assets/flagVietnam.png" width="44vw" alt="flagVietNam" class="flagVietNam">
+                </div>
             </div>
-            <a href="../src/index.html"><img src="../assets/header-logo.png" width="20px" height="auto" alt="logoCineMoon" class="logoCineMoon"></a>
-            <p>VÕ GIA HUY</p>   
-            <img src="../assets/flagVietnam.png" width="40px" alt="flagVietNam" class="flagVietNam">
-            <img src="../assets/flagamerica.png" width="30px" alt="flagAmerica" class="flagAmerica">
-        </div>
-        
-        <hr class="lineToolbar">
-        <div class="toolBar">
-            <a href="#selectTheater"><h3 class="toolLeft">Chọn rạp</h3></a>
-            <a href="#showTimes"><h3 class="toolLeft">Lịch chiếu</h3></a>
-            <a href="./discount.html"><h3>Khuyến mãi</h3></a>
-            <a href="#eventRetals"><h3>Thuê sự kiện</h3></a>
-            <a href="#entertainmentOptions"><h3>Tất cả các giải trí</h3></a>
-            <a href="#aboutUs"><h3>Giới thiệu</h3></a>
+            
+            <hr class="lineToolbar">
+            <div class="toolBar">
+                <div class="leftItems">
+                    <a href="#selectTheater"><h3 class="toolLeft">Chọn rạp</h3></a>
+                    <a href="#showTimes"><h3 class="toolLeft">Lịch chiếu</h3></a>
+                </div> 
+                <div class="rightItems">  
+                    <a href="./discount.html"><h3>Khuyến mãi</h3></a>
+                    <a href="#eventRetals"><h3>Thuê sự kiện</h3></a>
+                    <a href="#entertainmentOptions"><h3>Tất cả các giải trí</h3></a>
+                    <a href="#aboutUs"><h3>Giới thiệu</h3></a>
+                </div>     
+            </div>
         </div>
     </div>
 <!--Chọn rạp-->
@@ -138,75 +164,95 @@
         <div class="ourInformation">
             <img src="../assets/header-logo.png" width="260px" height="250px" alt="logoCineMoon" class="logoCineMoon">
             <p class="slogan">BE HAPPY, BE A MOON</p>
-            <img src="../assets/ticket.png" width="25px;" style=" z-index: 10;position: absolute; right: -435px; bottom: -50px;">
-            <p class="btnBooking"> ĐẶT VÉ</p>
-            <img src="../assets/popcorn.png" width="35px;" style=" z-index: 10;position: absolute; right: -575px; bottom: -55px;">
-            <p class="btnPopcorn">ĐẶT BẮP NƯỚC</p>
+
+            <div class="buttonGroup">
+                <div class="buttonWrapper">
+                    <img src="../assets/ticket.png" alt="ticket" class="ticketIcon">
+                    <p class="btnBooking">ĐẶT VÉ</p>
+                </div>
+                <div class="buttonWrapper">
+                    <img src="../assets/popcorn.png" alt="popcorn" class="popcornIcon">
+                    <p class="btnPopcorn">ĐẶT BẮP NƯỚC</p>
+                </div>
+            </div>
+
             <div class="socialIcons">
                 <a href="https://www.facebook.com/cinestarcinemasvietnam" target="_blank"><i class="fab fa-facebook" ></i></a>
                 <a href="https://www.youtube.com/@CinestarCinemasVietnam" target="_blank"><i class="fab fa-youtube"></i></a>
                 <a href="https://www.tiktok.com/@cinestarvietnam" target="_blank"><i class="fab fa-tiktok"></i></a>
                 <a href="https://zalo.me/2861828859391058401" target="_blank"><img src="../assets/iconZalo.png" width="17px;" alt="iconZalo" class="iconZalo"></a>
             </div>
-            <p class="language">Ngôn ngữ:</p>
-            <img src="../assets/flagVietnam.png" width="40px" alt="flagVietNam" class="flagVietNam"> 
+
+            <div class="languageGroup">
+                <p class="language">Ngôn ngữ:</p>
+                <img src="../assets/flagVietnam.png" alt="flagVietNam" class="flagVietNam"> 
+            </div>
+        </div>
+        
+        <div class="extraInformation">
+            <div class="infoBlock">
+                <p class="nameInfor1">TÀI KHOẢN</p>
+                <div class="detailsInfor1">
+                    <p>Đăng nhập</p>
+                    <p>Đăng kí</p>
+                    <p>Membership</p>
+                </div>
+            </div>
+            <div class="infoBlock">
+                <p class="nameInfor2">XEM PHIM</p>
+                <div class="detailsInfor2">
+                    <p>Phim đang chiếu</p>
+                    <p>Phim sắp chiếu</p>
+                    <p>Suất chiếu đặc biệt</p>
+                </div>
+            </div>
+            <div class="infoBlock">
+                <p class="nameInfor3">CINEMOON</p>
+                <div class="detailsInfor3">
+                    <p>Giới thiệu</p>
+                    <p>Liên hệ</p>
+                    <p>Tuyển dụng</p>
+                </div>
+            </div>
+            <div class="infoBlock">
+                <p class="nameInfor4">THUÊ SỰ KIỆN</p>
+                <div class="detailsInfor4">
+                    <p>Thuê rạp</p>
+                    <p>Các loại hình thuê khác</p>
+                </div>
+            </div>
+            <div class="infoBlock">
+                <p class="nameInfor5">DỊCH VỤ KHÁC</p>
+                <div class="detailsInfor5">
+                    <p>Nhà hàng</p>
+                    <p>Kidzone</p>
+                    <p>Bowling</p>
+                    <p>Billiards</p>
+                    <p>Gym</p>
+                    <p>Nhà hát Opera</p>
+                    <p>Coffee</p>
+                </div>
+            </div>
+            <div class="infoBlock">
+                <p class="nameInfor6">HỆ THỐNG RẠP</p>
+                <div class="detailsInfor6">
+                    <p>Tất cả hệ thống rạp</p>
+                    <p>CineMoon Quốc Thanh (TP.HCM)</p>
+                    <p>CineMoon Q.6 (TP.HCM)</p>
+                    <p>CineMoon Bà Trưng (TP.HCM)</p>
+                    <p>CineMoon Huế (Huế)</p>
+                    <p>CineMoon Đà Nẵng (Đà Nẵng)</p>
+                    <p>CineMoon Mặt Trăng (Mặt Trăng)</p>
+                    <p>CineMoon Sao Hỏa (Sao Hỏa)</p>
+                    <p>CineMoon Mặt Trời (Mặt Trời)</p>
+                    <p>CineMoon Sao Kim (Sao Kim)</p>
+                </div>
+            </div>
         </div>
         <hr class="lineFooter">
-        <p class="footerText">© 2025 CineMoon. Công ty một thành viên CineMoon.</p>
-        <p class="footerText1">Chính sách bảo mật | Điều khoản sử dụng | Chính sách cookie</p>
-
-        <div class="extraInformation">
-            <p class="nameInfor1">TÀI KHOẢN</p>
-            <div class="detailsInfor1">
-                <p>Đăng nhập</p>
-                <p>Đăng kí</p>
-                <p>Membership</p>
-            </div>
-
-            <p class="nameInfor2">XEM PHIM</p>
-            <div class="detailsInfor2">
-                <p>Phim đang chiếu</p>
-                <p>Phim sắp chiếu</p>
-                <p>Suất chiếu đặc biệt</p>
-            </div>
-
-            <p class="nameInfor3">CINEMOON</p>
-            <div class="detailsInfor3">
-                <p>Giới thiệu</p>
-                <p>Liên hệ</p>
-                <p>Tuyển dụng</p>
-            </div>
-
-            <p class="nameInfor4">THUÊ SỰ KIỆN</p>
-            <div class="detailsInfor4">
-                <p>Thuê rạp</p>
-                <p>Các loại hình thuê khác</p>
-            </div>
-
-            <p class="nameInfor5">DỊCH VỤ KHÁC</p>
-            <div class="detailsInfor5">
-                <p>Nhà hàng</p>
-                <p>Kidzone</p>
-                <p>Bowling</p>
-                <p>Billiards</p>
-                <p>Gym</p>
-                <p>Nhà hát Opera</p>
-                <p>Coffee</p>
-            </div>
-
-            <p class="nameInfor6">HỆ THỐNG RẠP</p>
-            <div class="detailsInfor6">
-                <p>Tất cả hệ thống rạp</p>
-                <p>CineMoon Quốc Thanh (TP.HCM)</p>
-                <p>CineMoon Q.6 (TP.HCM)</p>
-                <p>CineMoon Bà Trưng (TP.HCM)</p>
-                <p>CineMoon Huế (Huế)</p>
-                <p>CineMoon Đà Nẵng (Đà Nẵng)</p>
-                <p>CineMoon Mặt Trăng (Mặt Trăng)</p>
-                <p>CineMoon Sao Hỏa (Sao Hỏa)</p>
-                <p>CineMoon Mặt Trời (Mặt Trời)</p>
-                <p>CineMoon Sao Kim (Sao Kim)</p>
-            </div>
+        <div class="footerTextGroup">
+            <p class="footerText">© 2025 CineMoon. Công ty một thành viên CineMoon.</p>
+            <p class="footerText1">Chính sách bảo mật | Điều khoản sử dụng | Chính sách cookie</p>
         </div>
     </div>
 </body>
