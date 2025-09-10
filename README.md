@@ -39,16 +39,16 @@ https://yourusername.github.io/CineMoon/
 ## 📁 Cấu trúc thư mục
 
 ```
-CineMoon/
-├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-├── assets/
-│   ├── img/
-│   └── icons/
-└── README.md
+* CineMoon/
+* ├── index.html
+* ├── css/
+* │   └── style.css
+* ├── js/
+* │   └── script.js
+* ├── assets/
+* │   ├── img/
+* │   └── icons/
+* └── README.md
 ```
 
 ---
@@ -60,7 +60,7 @@ CineMoon/
 ```bash
 git clone https://github.com/Hank62-dev/CineMoon.git
 cd CineMoon
-````
+```bash
 
 Sau đó mở file `index.html` bằng trình duyệt.
 
@@ -69,16 +69,6 @@ Sau đó mở file `index.html` bằng trình duyệt.
 1. Mở VSCode
 2. Cài extension **Live Server**
 3. Chuột phải vào `index.html` → **Open with Live Server**
-
----
-
-## 📌 TODO
-
-* [ ] Tạo trang chi tiết phim
-* [ ] Tính năng đăng nhập/đăng ký người dùng
-* [ ] Thanh toán online (giả lập)
-* [ ] Giao diện trang quản trị phim (admin)
-* [ ] Lưu dữ liệu bằng localStorage hoặc Firebase
 
 ---
 
@@ -92,11 +82,8 @@ Bạn có thể tự do sao chép, sửa đổi nhưng không được sử dụ
 ## 👤 Tác giả
 
 * Tên: **Võ Gia Huy**
-* Email: *[your.email@example.com](mailto:huyvog6226@gmail.com)*
-* Facebook: [https://facebook.com/yourprofile]([https://facebook.com/yourprofile](https://www.facebook.com/vo.gia.huy.622929))
+* Email: *(mailto:huyvog6226@gmail.com)*
+* Facebook: *[https://facebook.com/yourprofile](https://www.facebook.com/vo.gia.huy.622929)*
 
 ---
 
-⭐ *Nếu bạn thấy dự án hay, hãy để lại ⭐ trên GitHub nhé!*
-
-```
