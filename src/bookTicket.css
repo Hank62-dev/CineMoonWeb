@@ -141,6 +141,7 @@ a{
   font-size: 0.9rem;
 }
 .intro .btnBooking{
+    border: none;
     display : flex;
     align-items: center;
     flex-direction: row;
@@ -180,6 +181,7 @@ a{
 
 
 .intro .btnPopcorn{
+    border: none;
     display : flex;
     align-items: center;
     flex-direction: row;

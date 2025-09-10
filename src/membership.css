@@ -43,6 +43,7 @@ a{
     bottom: -15px;
 }
 .intro .btnBooking{
+    border: none;
     text-align: right;
     background: linear-gradient(180deg, #fff700);
     border-radius: 5px;
@@ -83,6 +84,7 @@ a{
 
 
 .intro .btnPopcorn{
+    border: none;
     text-align: right;
     background: linear-gradient(360deg, #930fff);
     color: white;
